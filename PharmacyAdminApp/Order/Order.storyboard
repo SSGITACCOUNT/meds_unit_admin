@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OrderVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OrderVC" id="Y6W-OH-hqX" customClass="OrderVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ujc-nI-aUA">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-vV-Kjh">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQu-4F-d3o">
+                                                <rect key="frame" x="16" y="0.0" width="361" height="50"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5rZ-KO-c6P">
+                                                        <rect key="frame" x="4" y="4" width="353" height="42"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJO-ss-23E" customClass="RoundedButton" customModule="PharmacyAdminApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="42"/>
+                                                                <color key="backgroundColor" name="theme_color"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Ongoing">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="ongoingAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5uV-fX-OhF"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wC-YJ-mx2" customClass="RoundedButton" customModule="PharmacyAdminApp" customModuleProvider="target">
+                                                                <rect key="frame" x="176.66666666666663" y="0.0" width="176.33333333333337" height="42"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Completed">
+                                                                    <color key="titleColor" name="theme_color"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="completeAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="89Q-nw-QVe"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9x0-6V-Dze"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5rZ-KO-c6P" secondAttribute="trailing" constant="4" id="BRe-Bq-xcc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5rZ-KO-c6P" secondAttribute="bottom" constant="4" id="cue-5h-NIq"/>
+                                                    <constraint firstItem="5rZ-KO-c6P" firstAttribute="leading" secondItem="JQu-4F-d3o" secondAttribute="leading" constant="4" id="hnA-yT-vhZ"/>
+                                                    <constraint firstItem="5rZ-KO-c6P" firstAttribute="top" secondItem="JQu-4F-d3o" secondAttribute="top" constant="4" id="zon-cX-CYq"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="JQu-4F-d3o" firstAttribute="top" secondItem="aGk-vV-Kjh" secondAttribute="top" id="9Gl-jF-ik6"/>
+                                            <constraint firstItem="JQu-4F-d3o" firstAttribute="leading" secondItem="aGk-vV-Kjh" secondAttribute="leading" constant="16" id="M66-11-NZh"/>
+                                            <constraint firstAttribute="trailing" secondItem="JQu-4F-d3o" secondAttribute="trailing" constant="16" id="hj2-rW-rGh"/>
+                                            <constraint firstAttribute="bottom" secondItem="JQu-4F-d3o" secondAttribute="bottom" id="lpu-b7-K1N"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-fq-OYI">
+                                        <rect key="frame" x="0.0" y="66" width="393" height="649"/>
+                                        <connections>
+                                            <segue destination="9WM-Dc-ahA" kind="embed" id="Ogu-3v-dal"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ujc-nI-aUA" secondAttribute="trailing" id="26e-XP-r4p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="ujc-nI-aUA" secondAttribute="leading" id="iGw-ZL-k73"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="ujc-nI-aUA" secondAttribute="top" id="jYA-vs-T6F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ujc-nI-aUA" secondAttribute="bottom" id="jwS-nd-ayr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XLW-v5-hUd"/>
+                    <connections>
+                        <outlet property="buttonView" destination="JQu-4F-d3o" id="FNd-Gi-0qU"/>
+                        <outlet property="completeBtn" destination="6wC-YJ-mx2" id="Qm1-hy-CyU"/>
+                        <outlet property="ongoingBtn" destination="GJO-ss-23E" id="S0q-hz-Mo7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687.78625954198469" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wJt-Rh-h8D">
+            <objects>
+                <navigationController storyboardIdentifier="OrderNVC" automaticallyAdjustsScrollViewInsets="NO" id="goq-Iw-cC3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="31H-AX-bUF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="PXl-gv-Mb3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngO-gK-Ix5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="-2"/>
+        </scene>
+        <!--Swifty Page Controller-->
+        <scene sceneID="FN8-R2-zv5">
+            <objects>
+                <viewController id="9WM-Dc-ahA" customClass="SwiftyPageController" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="daY-Wb-x9V">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="649"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9c-WP-SgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1603" y="-2"/>
+        </scene>
+        <!--Past OrderVC-->
+        <scene sceneID="p9e-cb-0wS">
+            <objects>
+                <viewController storyboardIdentifier="PastOrderVC" id="Cdg-t2-IkU" customClass="PastOrderVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wCE-aO-ZJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Q1B-ES-tVz"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stZ-hp-536" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752" y="339"/>
+        </scene>
+        <!--Ongoing OrderVC-->
+        <scene sceneID="TeB-HN-rCC">
+            <objects>
+                <viewController storyboardIdentifier="OngoingOrderVC" id="uzO-9W-65N" customClass="OngoingOrderVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0io-4L-JLA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T2M-kl-64b">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OngoingOrderTVCell" rowHeight="116" id="HSL-ro-4WE" customClass="OngoingOrderTVCell" customModule="PharmacyAdminApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="116"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HSL-ro-4WE" id="TCW-tX-tyv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHs-9A-XrA" customClass="CardView" customModule="PharmacyAdminApp" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="361" height="100"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" systemColor="systemGray6Color"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hHs-9A-XrA" firstAttribute="leading" secondItem="TCW-tX-tyv" secondAttribute="leading" constant="16" id="SLF-Ln-ixJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="hHs-9A-XrA" secondAttribute="bottom" constant="8" id="bbT-4L-nmA"/>
+                                                <constraint firstAttribute="trailing" secondItem="hHs-9A-XrA" secondAttribute="trailing" constant="16" id="pJl-fV-dBM"/>
+                                                <constraint firstItem="hHs-9A-XrA" firstAttribute="top" secondItem="TCW-tX-tyv" secondAttribute="top" constant="8" id="ywT-dg-S5E"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e38-vC-ZVv"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="T2M-kl-64b" firstAttribute="leading" secondItem="e38-vC-ZVv" secondAttribute="leading" id="2YA-fR-WMk"/>
+                            <constraint firstItem="e38-vC-ZVv" firstAttribute="bottom" secondItem="T2M-kl-64b" secondAttribute="bottom" id="B6K-8F-Xq5"/>
+                            <constraint firstItem="T2M-kl-64b" firstAttribute="top" secondItem="e38-vC-ZVv" secondAttribute="top" id="CJU-op-7Fi"/>
+                            <constraint firstItem="e38-vC-ZVv" firstAttribute="trailing" secondItem="T2M-kl-64b" secondAttribute="trailing" id="PUY-Xl-At1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="T2M-kl-64b" id="6vw-IM-wqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bui-Gx-F8x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751.9083969465646" y="-341.54929577464793"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="6wC-YJ-mx2">
+            <size key="intrinsicContentSize" width="86" height="32"/>
+        </designable>
+        <designable name="GJO-ss-23E">
+            <size key="intrinsicContentSize" width="66" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="theme_color">
+            <color red="0.17599999904632568" green="0.60799998044967651" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
