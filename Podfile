@@ -5,10 +5,12 @@ target 'PharmacyAdminApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'KeychainAccess'
-  pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
-  pod 'Firebase/Analytics'
-  pod 'Firebase/Storage'
+
+pod 'FirebaseAnalytics'
+pod 'FirebaseStorage'
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
+
     # Pods for PharmacyAdminApp
 
   target 'PharmacyAdminAppTests' do

@@ -1,6 +1,0 @@
-framework module Pods_PharmacyAdminAppTests {
-  umbrella header "Pods-PharmacyAdminAppTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
