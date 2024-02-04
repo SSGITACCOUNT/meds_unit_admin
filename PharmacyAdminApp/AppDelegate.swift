@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    static var standard: AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+//        GoogleMapsManager.shared.configure()
+        AppDelegate.standard.window?.rootViewController = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "LaunchScreenVC")
         return true
     }
 

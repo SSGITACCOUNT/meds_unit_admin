@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2204BFF8483530B1CC315A /* Pods_PharmacyAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */; };
 		7EC1B4E32B593B81003958E2 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E22B593B81003958E2 /* Order.storyboard */; };
 		7EC1B4E62B5A3744003958E2 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E52B5A3744003958E2 /* ContactVC.swift */; };
 		7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E72B5A3783003958E2 /* Contact.storyboard */; };
@@ -45,6 +46,19 @@
 		7EFED9CB2B57CD8800FDE1A5 /* PharmacyAdminAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9CA2B57CD8800FDE1A5 /* PharmacyAdminAppTests.swift */; };
 		7EFED9D52B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9D42B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift */; };
 		7EFED9D72B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9D62B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift */; };
+		820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */; };
+		820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EA2B6C15440092AE11 /* Extensions.swift */; };
+		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
+		8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */; };
+		8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */; };
+		8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9732B63CF6C00AB054C /* KeychainManager.swift */; };
+		8287C9792B64D0D900AB054C /* LaunchScreenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9782B64D0D900AB054C /* LaunchScreenVM.swift */; };
+		8287C97B2B64D11000AB054C /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C97A2B64D11000AB054C /* Handler.swift */; };
+		8287C97D2B64D38500AB054C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C97C2B64D38500AB054C /* Constants.swift */; };
+		8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9802B64D40400AB054C /* FirestoreUser.swift */; };
+		8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9822B64D7ED00AB054C /* AlertManager.swift */; };
+		B8DFD87089D5F56CC84A1AAD /* Pods_PharmacyAdminAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78C8D802DB615076FEC92B9 /* Pods_PharmacyAdminAppTests.framework */; };
+		F2FE238CE0B60D67088D90E1 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C20D678153A99E14A67C862 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyAdminApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E37190FADF54C1A2853F02 /* Pods-PharmacyAdminAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminAppTests.release.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminAppTests/Pods-PharmacyAdminAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CD70F1E25A5C4FE206EDA99 /* Pods-PharmacyAdminApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminApp.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7EC1B4E22B593B81003958E2 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
 		7EC1B4E52B5A3744003958E2 /* ContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
 		7EC1B4E72B5A3783003958E2 /* Contact.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
@@ -107,6 +124,23 @@
 		7EFED9D02B57CD8800FDE1A5 /* PharmacyAdminAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PharmacyAdminAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFED9D42B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyAdminAppUITests.swift; sourceTree = "<group>"; };
 		7EFED9D62B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyAdminAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserManager.swift; sourceTree = "<group>"; };
+		820D79EA2B6C15440092AE11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
+		8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
+		8287C9732B63CF6C00AB054C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		8287C9782B64D0D900AB054C /* LaunchScreenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVM.swift; sourceTree = "<group>"; };
+		8287C97A2B64D11000AB054C /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		8287C97C2B64D38500AB054C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8287C9802B64D40400AB054C /* FirestoreUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUser.swift; sourceTree = "<group>"; };
+		8287C9822B64D7ED00AB054C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		8AC7D97CD2F3DBBCF5EA0ABF /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C20D678153A99E14A67C862 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78C8D802DB615076FEC92B9 /* Pods_PharmacyAdminAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyAdminAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D93DE33E4285594158BF6CF0 /* Pods-PharmacyAdminApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminApp.release.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp.release.xcconfig"; sourceTree = "<group>"; };
+		F670BCA33E1A9CAC1E3B50DD /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminApp-PharmacyAdminAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE5B318CE5B2BF28F7F76D38 /* Pods-PharmacyAdminAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminAppTests/Pods-PharmacyAdminAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A2204BFF8483530B1CC315A /* Pods_PharmacyAdminApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DFD87089D5F56CC84A1AAD /* Pods_PharmacyAdminAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +164,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FE238CE0B60D67088D90E1 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F83CC77B03704CE63DF33F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */,
+				9C20D678153A99E14A67C862 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework */,
+				C78C8D802DB615076FEC92B9 /* Pods_PharmacyAdminAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24CD17D61A6AECB03EDCE52F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CD70F1E25A5C4FE206EDA99 /* Pods-PharmacyAdminApp.debug.xcconfig */,
+				D93DE33E4285594158BF6CF0 /* Pods-PharmacyAdminApp.release.xcconfig */,
+				F670BCA33E1A9CAC1E3B50DD /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.debug.xcconfig */,
+				8AC7D97CD2F3DBBCF5EA0ABF /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig */,
+				FE5B318CE5B2BF28F7F76D38 /* Pods-PharmacyAdminAppTests.debug.xcconfig */,
+				66E37190FADF54C1A2853F02 /* Pods-PharmacyAdminAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7EC1B4E12B593B6C003958E2 /* Order */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +249,7 @@
 				7EDBEBF82B590A100015AB68 /* SideMenuController */,
 				7EDBEBEF2B58F8970015AB68 /* RoundedButton.swift */,
 				7EC1B4F82B5A4107003958E2 /* Enum.swift */,
+				820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -197,8 +258,10 @@
 			isa = PBXGroup;
 			children = (
 				7EFED9B92B57CD8600FDE1A5 /* Main.storyboard */,
-				7EDBEC102B591A860015AB68 /* SideMenu */,
 				7EFED9B72B57CD8600FDE1A5 /* ViewController.swift */,
+				8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */,
+				8287C9782B64D0D900AB054C /* LaunchScreenVM.swift */,
+				7EDBEC102B591A860015AB68 /* SideMenu */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -262,6 +325,8 @@
 				7EFED9C92B57CD8800FDE1A5 /* PharmacyAdminAppTests */,
 				7EFED9D32B57CD8800FDE1A5 /* PharmacyAdminAppUITests */,
 				7EFED9B12B57CD8600FDE1A5 /* Products */,
+				24CD17D61A6AECB03EDCE52F /* Pods */,
+				0F83CC77B03704CE63DF33F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,17 +343,17 @@
 		7EFED9B22B57CD8600FDE1A5 /* PharmacyAdminApp */ = {
 			isa = PBXGroup;
 			children = (
-				7EDBEBF12B58FE7A0015AB68 /* Main */,
-				7EDBEBF22B58FE8E0015AB68 /* Auth */,
-				7EDBEBF52B58FEEF0015AB68 /* Home */,
-				7EC1B4E12B593B6C003958E2 /* Order */,
-				7EC1B4E42B5A3728003958E2 /* Contact */,
+				8287C97E2B64D3B000AB054C /* VC+VM */,
+				8287C9752B63D2B600AB054C /* Help */,
+				8287C97F2B64D3EC00AB054C /* Model */,
 				7EFED9B32B57CD8600FDE1A5 /* AppDelegate.swift */,
 				7EFED9B52B57CD8600FDE1A5 /* SceneDelegate.swift */,
 				7EDBEBEE2B58F8660015AB68 /* Extension */,
 				7EFED9BC2B57CD8800FDE1A5 /* Assets.xcassets */,
 				7EFED9BE2B57CD8800FDE1A5 /* LaunchScreen.storyboard */,
 				7EFED9C12B57CD8800FDE1A5 /* Info.plist */,
+				8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */,
+				8287C9732B63CF6C00AB054C /* KeychainManager.swift */,
 			);
 			path = PharmacyAdminApp;
 			sourceTree = "<group>";
@@ -310,6 +375,38 @@
 			path = PharmacyAdminAppUITests;
 			sourceTree = "<group>";
 		};
+		8287C9752B63D2B600AB054C /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				8287C97A2B64D11000AB054C /* Handler.swift */,
+				8287C97C2B64D38500AB054C /* Constants.swift */,
+				8287C9822B64D7ED00AB054C /* AlertManager.swift */,
+				820D79EA2B6C15440092AE11 /* Extensions.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		8287C97E2B64D3B000AB054C /* VC+VM */ = {
+			isa = PBXGroup;
+			children = (
+				7EDBEBF12B58FE7A0015AB68 /* Main */,
+				7EDBEBF22B58FE8E0015AB68 /* Auth */,
+				7EDBEBF52B58FEEF0015AB68 /* Home */,
+				7EC1B4E12B593B6C003958E2 /* Order */,
+				7EC1B4E42B5A3728003958E2 /* Contact */,
+			);
+			path = "VC+VM";
+			sourceTree = "<group>";
+		};
+		8287C97F2B64D3EC00AB054C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8287C9802B64D40400AB054C /* FirestoreUser.swift */,
+				820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,9 +414,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EFED9DA2B57CD8800FDE1A5 /* Build configuration list for PBXNativeTarget "PharmacyAdminApp" */;
 			buildPhases = (
+				564FF4CE18ECEC9D4EC68EE2 /* [CP] Check Pods Manifest.lock */,
 				7EFED9AC2B57CD8600FDE1A5 /* Sources */,
 				7EFED9AD2B57CD8600FDE1A5 /* Frameworks */,
 				7EFED9AE2B57CD8600FDE1A5 /* Resources */,
+				E28C7D47E63DC898B622C5C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +433,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EFED9DD2B57CD8800FDE1A5 /* Build configuration list for PBXNativeTarget "PharmacyAdminAppTests" */;
 			buildPhases = (
+				FFB7B480C42DAD8B9F116EBD /* [CP] Check Pods Manifest.lock */,
 				7EFED9C22B57CD8800FDE1A5 /* Sources */,
 				7EFED9C32B57CD8800FDE1A5 /* Frameworks */,
 				7EFED9C42B57CD8800FDE1A5 /* Resources */,
@@ -352,9 +452,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EFED9E02B57CD8800FDE1A5 /* Build configuration list for PBXNativeTarget "PharmacyAdminAppUITests" */;
 			buildPhases = (
+				4C921D541FB75D8BDC6E8128 /* [CP] Check Pods Manifest.lock */,
 				7EFED9CC2B57CD8800FDE1A5 /* Sources */,
 				7EFED9CD2B57CD8800FDE1A5 /* Frameworks */,
 				7EFED9CE2B57CD8800FDE1A5 /* Resources */,
+				59B0D384C4176C6D59B0E86B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -442,6 +544,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C921D541FB75D8BDC6E8128 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		564FF4CE18ECEC9D4EC68EE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmacyAdminApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59B0D384C4176C6D59B0E86B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E28C7D47E63DC898B622C5C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFB7B480C42DAD8B9F116EBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PharmacyAdminAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7EFED9AC2B57CD8600FDE1A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -449,22 +654,33 @@
 			files = (
 				7EDBEC0F2B5912870015AB68 /* SideMenuConfigurationVC.swift in Sources */,
 				7EC1B4EA2B5A3A57003958E2 /* OrderVC.swift in Sources */,
+				8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */,
 				7EC1B4F92B5A4107003958E2 /* Enum.swift in Sources */,
 				7EFED9B82B57CD8600FDE1A5 /* ViewController.swift in Sources */,
 				7EC1B4FD2B5A47F1003958E2 /* PastOrderTVCell.swift in Sources */,
+				8287C97B2B64D11000AB054C /* Handler.swift in Sources */,
 				7EC1B4E62B5A3744003958E2 /* ContactVC.swift in Sources */,
 				7EDBEC122B591A9E0015AB68 /* SideMenuVC.swift in Sources */,
+				820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */,
 				7EC1B4F02B5A3FAB003958E2 /* PastOrderVC.swift in Sources */,
 				7EDBEC0B2B590A100015AB68 /* SideMenuController.swift in Sources */,
+				8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */,
 				7EDBEC0C2B590A100015AB68 /* SideMenuController+SideOver.swift in Sources */,
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
+				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
+				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
 				7EFED9B42B57CD8600FDE1A5 /* AppDelegate.swift in Sources */,
+				820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */,
+				8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */,
 				7EDBEC162B591E1A0015AB68 /* SideMenuVM.swift in Sources */,
 				7EC1B4F52B5A3FFB003958E2 /* SwiftyPageController.swift in Sources */,
 				7EDBEC142B591DB00015AB68 /* SideMenuTVCell.swift in Sources */,
 				7EFED9B62B57CD8600FDE1A5 /* SceneDelegate.swift in Sources */,
+				8287C97D2B64D38500AB054C /* Constants.swift in Sources */,
+				820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */,
+				8287C9792B64D0D900AB054C /* LaunchScreenVM.swift in Sources */,
 				7EDBEC052B590A100015AB68 /* CenterContainmentSegue.swift in Sources */,
 				7EC1B4F62B5A3FFB003958E2 /* SwiftyPageControllerAnimatorDefault.swift in Sources */,
 				7EDBEBF02B58F8970015AB68 /* RoundedButton.swift in Sources */,
@@ -649,6 +865,7 @@
 		};
 		7EFED9DB2B57CD8800FDE1A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD70F1E25A5C4FE206EDA99 /* Pods-PharmacyAdminApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -662,7 +879,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -678,6 +895,7 @@
 		};
 		7EFED9DC2B57CD8800FDE1A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D93DE33E4285594158BF6CF0 /* Pods-PharmacyAdminApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -691,7 +909,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,6 +925,7 @@
 		};
 		7EFED9DE2B57CD8800FDE1A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE5B318CE5B2BF28F7F76D38 /* Pods-PharmacyAdminAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -727,6 +946,7 @@
 		};
 		7EFED9DF2B57CD8800FDE1A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E37190FADF54C1A2853F02 /* Pods-PharmacyAdminAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -747,6 +967,7 @@
 		};
 		7EFED9E12B57CD8800FDE1A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F670BCA33E1A9CAC1E3B50DD /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -765,6 +986,7 @@
 		};
 		7EFED9E22B57CD8800FDE1A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC7D97CD2F3DBBCF5EA0ABF /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

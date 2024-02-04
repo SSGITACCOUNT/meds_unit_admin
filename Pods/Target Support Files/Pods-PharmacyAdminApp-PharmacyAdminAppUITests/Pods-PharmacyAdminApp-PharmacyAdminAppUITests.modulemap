@@ -1,0 +1,6 @@
+framework module Pods_PharmacyAdminApp_PharmacyAdminAppUITests {
+  umbrella header "Pods-PharmacyAdminApp-PharmacyAdminAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

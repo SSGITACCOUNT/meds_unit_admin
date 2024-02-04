@@ -144,10 +144,3 @@ extension UIViewController {
         }
     }
 }
-
-extension UIViewController {
-    
-    static func storyboardInstantiate(appStoryboard: AppStoryboard, identifier: String) -> Self {
-        return appStoryboard.instance.instantiateViewController(withIdentifier: identifier) as! Self
-    }
-}
