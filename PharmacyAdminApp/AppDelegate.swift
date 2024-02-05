@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
 //        GoogleMapsManager.shared.configure()
         FirebaseApp.configure()
         AppDelegate.standard.window?.rootViewController = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "LaunchScreenVC")

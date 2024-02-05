@@ -20,20 +20,21 @@ class LaunchScreenVC: UIViewController {
     
     //:MARK check user authentication on firebase
     private func checkIsUserAuthenticatedOnFirebase(){
-        vm.checkIsUserAuthenticatedFromFirebase { [weak self] status, message,data in
-            guard let _ = self else { return }
-            //                        try! Auth.auth().signOut() // TODO:  remove this after testing
-            //            self.handleUserNavigation(isUserAuthenticated: status)
-            if(status){
-                print("***** User Authenticated ******")
-                if let _model = data as? User {
-                    self?.handleAuthenticatedUser(user: _model)
-                }
-            }else{
-                self?.handleUserNavigation(isUserAuthenticated: status)
-                print("***** User Not Authenticated ******")
-            }
-        }
+        self.navigateToHomeVc(isAdmin: true)
+//        vm.checkIsUserAuthenticatedFromFirebase { [weak self] status, message,data in
+//            guard let _ = self else { return }
+//            //                        try! Auth.auth().signOut() // TODO:  remove this after testing
+//            //            self.handleUserNavigation(isUserAuthenticated: status)
+//            if(status){
+//                print("***** User Authenticated ******")
+//                if let _model = data as? User {
+//                    self?.handleAuthenticatedUser(user: _model)
+//                }
+//            }else{
+//                self?.handleUserNavigation(isUserAuthenticated: status)
+//                print("***** User Not Authenticated ******")
+//            }
+//        }
     }
     
     private func handleAuthenticatedUser(user:User){
@@ -87,7 +88,7 @@ class LaunchScreenVC: UIViewController {
     
     private func navigateToHomeVc(isAdmin:Bool){
         if(isAdmin){
-            let vc = ApplicationServiceProvider.shared.viewController(in: .Main, identifier: "MainNVC")
+            let vc = ApplicationServiceProvider.shared.viewController(in: .Main, identifier: "SideMenuConfigurationVC")
             AppDelegate.standard.window?.rootViewController = vc
             
         }else{
