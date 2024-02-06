@@ -260,6 +260,13 @@
                                                 <constraint firstItem="ggV-O4-QiZ" firstAttribute="top" secondItem="ieg-Nl-XoN" secondAttribute="top" constant="8" id="se1-rz-Jvi"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLbl" destination="1RC-c8-v9s" id="XTT-kt-fGm"/>
+                                            <outlet property="logoNameImg" destination="NZe-aY-7xw" id="WXT-Z3-n09"/>
+                                            <outlet property="orderNoLbl" destination="xjX-ny-7yH" id="Yhu-RZ-w3q"/>
+                                            <outlet property="statusLbl" destination="43X-CO-xNY" id="W2u-TE-sV5"/>
+                                            <outlet property="titleLbl" destination="qpB-C8-0vm" id="m1i-tF-tlO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -393,6 +400,13 @@
                                                 <constraint firstItem="hHs-9A-XrA" firstAttribute="top" secondItem="TCW-tX-tyv" secondAttribute="top" constant="8" id="ywT-dg-S5E"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLbl" destination="WDn-P5-e2w" id="BJR-3q-y5U"/>
+                                            <outlet property="logoNameImg" destination="scR-Tt-egr" id="zTd-lm-ZZG"/>
+                                            <outlet property="orderNoLbl" destination="59i-ty-jHS" id="PHY-bj-Be0"/>
+                                            <outlet property="statusLbl" destination="X9t-af-Tt5" id="L5K-9c-kb5"/>
+                                            <outlet property="titleLbl" destination="xyU-CF-h45" id="YTg-ek-OtF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
