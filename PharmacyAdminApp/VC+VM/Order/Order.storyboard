@@ -21,8 +21,40 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ujc-nI-aUA">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-iu-0km">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Orders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5Y-V9-147">
+                                                <rect key="frame" x="16" y="10.333333333333327" width="361" height="19.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdp-4N-6JB">
+                                                <rect key="frame" x="16" y="5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="OOd-eV-JRh"/>
+                                                    <constraint firstAttribute="height" constant="30" id="jgR-WW-k6i"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="Back_btn"/>
+                                                <connections>
+                                                    <action selector="backAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pbv-jS-0QT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="S5Y-V9-147" firstAttribute="centerY" secondItem="0bX-iu-0km" secondAttribute="centerY" id="3s0-B9-HKc"/>
+                                            <constraint firstAttribute="trailing" secondItem="S5Y-V9-147" secondAttribute="trailing" constant="16" id="4V6-eI-o7g"/>
+                                            <constraint firstItem="Fdp-4N-6JB" firstAttribute="centerY" secondItem="0bX-iu-0km" secondAttribute="centerY" id="ZOl-FP-Mhz"/>
+                                            <constraint firstItem="S5Y-V9-147" firstAttribute="leading" secondItem="0bX-iu-0km" secondAttribute="leading" constant="16" id="bc0-FK-4nl"/>
+                                            <constraint firstItem="Fdp-4N-6JB" firstAttribute="leading" secondItem="0bX-iu-0km" secondAttribute="leading" constant="16" id="pNz-Zk-aKD"/>
+                                            <constraint firstAttribute="height" constant="40" id="r4L-WU-9sB"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGk-vV-Kjh">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                        <rect key="frame" x="0.0" y="56" width="393" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQu-4F-d3o">
                                                 <rect key="frame" x="16" y="0.0" width="361" height="50"/>
@@ -91,7 +123,7 @@
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bir-fq-OYI">
-                                        <rect key="frame" x="0.0" y="66" width="393" height="649"/>
+                                        <rect key="frame" x="0.0" y="122" width="393" height="593"/>
                                         <connections>
                                             <segue destination="9WM-Dc-ahA" kind="embed" id="Ogu-3v-dal"/>
                                         </connections>
@@ -142,7 +174,7 @@
             <objects>
                 <viewController id="9WM-Dc-ahA" customClass="SwiftyPageController" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="daY-Wb-x9V">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="649"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="593"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="LtA-Nf-7Qm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -442,6 +474,7 @@
         </designable>
     </designables>
     <resources>
+        <image name="Back_btn" width="512" height="492"/>
         <image name="best-seller" width="512" height="512"/>
         <namedColor name="theme_color">
             <color red="0.17599999904632568" green="0.60799998044967651" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -82,6 +82,10 @@ class OrderVC: UIViewController {
         manageTabSelection(tabIndex: 1)
         containerController.selectController(atIndex: 1, animated: true)
     }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension OrderVC: SwiftyPageControllerDelegate{

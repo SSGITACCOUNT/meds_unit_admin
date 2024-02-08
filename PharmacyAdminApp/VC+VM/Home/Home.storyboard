@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="cXv-Np-BLC">
             <objects>
-                <viewController id="rdD-0Z-h5F" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="rdD-0Z-h5F" customClass="HomeVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pC3-Ar-JoJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,11 +81,22 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4C-e0-yzE">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="166.33333333333334" height="130"/>
+                                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                        <connections>
+                                                                            <action selector="orderViewAction:" destination="rdD-0Z-h5F" eventType="touchUpInside" id="pSS-Sv-kgl"/>
+                                                                        </connections>
+                                                                    </button>
                                                                 </subviews>
                                                                 <color key="backgroundColor" white="1" alpha="0.20061118197278915" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="Yn2-OQ-cDF" secondAttribute="trailing" constant="20" id="AgJ-9h-5MD"/>
+                                                                    <constraint firstItem="H4C-e0-yzE" firstAttribute="top" secondItem="T49-Gi-0L8" secondAttribute="top" id="VVm-Rx-Anw"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="H4C-e0-yzE" secondAttribute="trailing" id="Zys-6l-aU9"/>
                                                                     <constraint firstItem="Yn2-OQ-cDF" firstAttribute="leading" secondItem="T49-Gi-0L8" secondAttribute="leading" constant="20" id="e9t-DR-kIT"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="H4C-e0-yzE" secondAttribute="bottom" id="otI-1P-wPI"/>
+                                                                    <constraint firstItem="H4C-e0-yzE" firstAttribute="leading" secondItem="T49-Gi-0L8" secondAttribute="leading" id="p6T-ot-oa9"/>
                                                                     <constraint firstItem="Yn2-OQ-cDF" firstAttribute="top" secondItem="T49-Gi-0L8" secondAttribute="top" constant="20" id="uOS-ci-vQl"/>
                                                                     <constraint firstAttribute="bottom" secondItem="Yn2-OQ-cDF" secondAttribute="bottom" constant="20" id="uye-fC-5Mi"/>
                                                                 </constraints>

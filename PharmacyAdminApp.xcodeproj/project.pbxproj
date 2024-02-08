@@ -46,6 +46,7 @@
 		7EFED9CB2B57CD8800FDE1A5 /* PharmacyAdminAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9CA2B57CD8800FDE1A5 /* PharmacyAdminAppTests.swift */; };
 		7EFED9D52B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9D42B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift */; };
 		7EFED9D72B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFED9D62B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift */; };
+		82062F252B722A9B00600E34 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82062F242B722A9B00600E34 /* HomeVC.swift */; };
 		820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */; };
 		820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EA2B6C15440092AE11 /* Extensions.swift */; };
 		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
@@ -125,6 +126,7 @@
 		7EFED9D02B57CD8800FDE1A5 /* PharmacyAdminAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PharmacyAdminAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFED9D42B57CD8800FDE1A5 /* PharmacyAdminAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyAdminAppUITests.swift; sourceTree = "<group>"; };
 		7EFED9D62B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyAdminAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82062F242B722A9B00600E34 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserManager.swift; sourceTree = "<group>"; };
 		820D79EA2B6C15440092AE11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				7EDBEBF62B58FEFF0015AB68 /* Home.storyboard */,
 				7EDBEC0E2B5912870015AB68 /* SideMenuConfigurationVC.swift */,
+				82062F242B722A9B00600E34 /* HomeVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
+				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
 				7EFED9B42B57CD8600FDE1A5 /* AppDelegate.swift in Sources */,
