@@ -59,6 +59,10 @@
 		8287C97D2B64D38500AB054C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C97C2B64D38500AB054C /* Constants.swift */; };
 		8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9802B64D40400AB054C /* FirestoreUser.swift */; };
 		8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9822B64D7ED00AB054C /* AlertManager.swift */; };
+		82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F422B7540A300041D97 /* SenderTVCell.swift */; };
+		82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E22F432B7540A300041D97 /* SenderTVCell.xib */; };
+		82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F482B75410A00041D97 /* ReceiverTVCell.swift */; };
+		82E22F4B2B75410A00041D97 /* ReceiverTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E22F492B75410A00041D97 /* ReceiverTVCell.xib */; };
 		B8DFD87089D5F56CC84A1AAD /* Pods_PharmacyAdminAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C78C8D802DB615076FEC92B9 /* Pods_PharmacyAdminAppTests.framework */; };
 		F2FE238CE0B60D67088D90E1 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C20D678153A99E14A67C862 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -139,6 +143,10 @@
 		8287C97C2B64D38500AB054C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8287C9802B64D40400AB054C /* FirestoreUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUser.swift; sourceTree = "<group>"; };
 		8287C9822B64D7ED00AB054C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		82E22F422B7540A300041D97 /* SenderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTVCell.swift; sourceTree = "<group>"; };
+		82E22F432B7540A300041D97 /* SenderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTVCell.xib; sourceTree = "<group>"; };
+		82E22F482B75410A00041D97 /* ReceiverTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVCell.swift; sourceTree = "<group>"; };
+		82E22F492B75410A00041D97 /* ReceiverTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiverTVCell.xib; sourceTree = "<group>"; };
 		8AC7D97CD2F3DBBCF5EA0ABF /* Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9C20D678153A99E14A67C862 /* Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyAdminApp_PharmacyAdminAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C78C8D802DB615076FEC92B9 /* Pods_PharmacyAdminAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PharmacyAdminAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,6 +222,10 @@
 			children = (
 				7EC1B4E72B5A3783003958E2 /* Contact.storyboard */,
 				7EC1B4E52B5A3744003958E2 /* ContactVC.swift */,
+				82E22F422B7540A300041D97 /* SenderTVCell.swift */,
+				82E22F432B7540A300041D97 /* SenderTVCell.xib */,
+				82E22F482B75410A00041D97 /* ReceiverTVCell.swift */,
+				82E22F492B75410A00041D97 /* ReceiverTVCell.xib */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -523,10 +535,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDBEC042B590A100015AB68 /* LICENSE in Resources */,
+				82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */,
 				7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */,
 				7EDBEBF42B58FEBE0015AB68 /* Auth.storyboard in Resources */,
 				7EDBEBF72B58FEFF0015AB68 /* Home.storyboard in Resources */,
 				7EC1B4E32B593B81003958E2 /* Order.storyboard in Resources */,
+				82E22F4B2B75410A00041D97 /* ReceiverTVCell.xib in Resources */,
 				7EDBEC0D2B590A100015AB68 /* README.md in Resources */,
 				7EFED9C02B57CD8800FDE1A5 /* LaunchScreen.storyboard in Resources */,
 				82137F802B6FEAB800C522F0 /* GoogleService-Info.plist in Resources */,
@@ -673,10 +687,12 @@
 				7EDBEC0B2B590A100015AB68 /* SideMenuController.swift in Sources */,
 				8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */,
 				7EDBEC0C2B590A100015AB68 /* SideMenuController+SideOver.swift in Sources */,
+				82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */,
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
 				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,
+				82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
 				7EFED9B42B57CD8600FDE1A5 /* AppDelegate.swift in Sources */,
