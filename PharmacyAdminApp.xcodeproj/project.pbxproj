@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A2204BFF8483530B1CC315A /* Pods_PharmacyAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */; };
 		7EC1B4E32B593B81003958E2 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E22B593B81003958E2 /* Order.storyboard */; };
 		7EC1B4E62B5A3744003958E2 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E52B5A3744003958E2 /* ContactVC.swift */; };
 		7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1B4E72B5A3783003958E2 /* Contact.storyboard */; };
@@ -50,7 +49,6 @@
 		820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */; };
 		820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EA2B6C15440092AE11 /* Extensions.swift */; };
 		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
-		82137F802B6FEAB800C522F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82137F7F2B6FEAB800C522F0 /* GoogleService-Info.plist */; };
 		8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */; };
 		8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */; };
 		8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9732B63CF6C00AB054C /* KeychainManager.swift */; };
@@ -59,6 +57,9 @@
 		8287C97D2B64D38500AB054C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C97C2B64D38500AB054C /* Constants.swift */; };
 		8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9802B64D40400AB054C /* FirestoreUser.swift */; };
 		8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9822B64D7ED00AB054C /* AlertManager.swift */; };
+		829245E22B89FAB6005023B5 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 829245E12B89FAB6005023B5 /* FirebaseCrashlytics */; };
+		829245E62B8A03C8005023B5 /* Pods_PharmacyAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */; };
+		829245F02B8A0BC0005023B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 829245EF2B8A0BC0005023B5 /* GoogleService-Info.plist */; };
 		82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F422B7540A300041D97 /* SenderTVCell.swift */; };
 		82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E22F432B7540A300041D97 /* SenderTVCell.xib */; };
 		82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F482B75410A00041D97 /* ReceiverTVCell.swift */; };
@@ -134,7 +135,6 @@
 		820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserManager.swift; sourceTree = "<group>"; };
 		820D79EA2B6C15440092AE11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
-		82137F7F2B6FEAB800C522F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
 		8287C9732B63CF6C00AB054C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -143,6 +143,7 @@
 		8287C97C2B64D38500AB054C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8287C9802B64D40400AB054C /* FirestoreUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUser.swift; sourceTree = "<group>"; };
 		8287C9822B64D7ED00AB054C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		829245EF2B8A0BC0005023B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82E22F422B7540A300041D97 /* SenderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTVCell.swift; sourceTree = "<group>"; };
 		82E22F432B7540A300041D97 /* SenderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTVCell.xib; sourceTree = "<group>"; };
 		82E22F482B75410A00041D97 /* ReceiverTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVCell.swift; sourceTree = "<group>"; };
@@ -160,7 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2204BFF8483530B1CC315A /* Pods_PharmacyAdminApp.framework in Frameworks */,
+				829245E22B89FAB6005023B5 /* FirebaseCrashlytics in Frameworks */,
+				829245E62B8A03C8005023B5 /* Pods_PharmacyAdminApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,11 +367,11 @@
 				8287C97F2B64D3EC00AB054C /* Model */,
 				7EFED9B32B57CD8600FDE1A5 /* AppDelegate.swift */,
 				7EFED9B52B57CD8600FDE1A5 /* SceneDelegate.swift */,
+				829245EF2B8A0BC0005023B5 /* GoogleService-Info.plist */,
 				7EDBEBEE2B58F8660015AB68 /* Extension */,
 				7EFED9BC2B57CD8800FDE1A5 /* Assets.xcassets */,
 				7EFED9BE2B57CD8800FDE1A5 /* LaunchScreen.storyboard */,
 				7EFED9C12B57CD8800FDE1A5 /* Info.plist */,
-				82137F7F2B6FEAB800C522F0 /* GoogleService-Info.plist */,
 				8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */,
 				8287C9732B63CF6C00AB054C /* KeychainManager.swift */,
 			);
@@ -437,12 +439,16 @@
 				7EFED9AD2B57CD8600FDE1A5 /* Frameworks */,
 				7EFED9AE2B57CD8600FDE1A5 /* Resources */,
 				E28C7D47E63DC898B622C5C0 /* [CP] Embed Pods Frameworks */,
+				829245E52B89FD0B005023B5 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PharmacyAdminApp;
+			packageProductDependencies = (
+				829245E12B89FAB6005023B5 /* FirebaseCrashlytics */,
+			);
 			productName = PharmacyAdminApp;
 			productReference = 7EFED9B02B57CD8600FDE1A5 /* PharmacyAdminApp.app */;
 			productType = "com.apple.product-type.application";
@@ -518,6 +524,9 @@
 				Base,
 			);
 			mainGroup = 7EFED9A72B57CD8600FDE1A5;
+			packageReferences = (
+				829245E02B89FA7E005023B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 7EFED9B12B57CD8600FDE1A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -539,11 +548,11 @@
 				7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */,
 				7EDBEBF42B58FEBE0015AB68 /* Auth.storyboard in Resources */,
 				7EDBEBF72B58FEFF0015AB68 /* Home.storyboard in Resources */,
+				829245F02B8A0BC0005023B5 /* GoogleService-Info.plist in Resources */,
 				7EC1B4E32B593B81003958E2 /* Order.storyboard in Resources */,
 				82E22F4B2B75410A00041D97 /* ReceiverTVCell.xib in Resources */,
 				7EDBEC0D2B590A100015AB68 /* README.md in Resources */,
 				7EFED9C02B57CD8800FDE1A5 /* LaunchScreen.storyboard in Resources */,
-				82137F802B6FEAB800C522F0 /* GoogleService-Info.plist in Resources */,
 				7EFED9BD2B57CD8800FDE1A5 /* Assets.xcassets in Resources */,
 				7EFED9BB2B57CD8600FDE1A5 /* Main.storyboard in Resources */,
 			);
@@ -626,6 +635,28 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		829245E52B89FD0B005023B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
 		E28C7D47E63DC898B622C5C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -895,6 +926,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = JJ477WM6T9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1069,6 +1101,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		829245E02B89FA7E005023B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		829245E12B89FAB6005023B5 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 829245E02B89FA7E005023B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7EFED9A82B57CD8600FDE1A5 /* Project object */;
 }

@@ -265,46 +265,8 @@
                                                                         <color key="textColor" name="theme_color"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJn-To-fjO">
-                                                                        <rect key="frame" x="0.0" y="288" width="353" height="40"/>
-                                                                        <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-PA-fyx">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
-                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
-                                                                            </textField>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="trailing" secondItem="mxF-PA-fyx" secondAttribute="trailing" id="2Oe-zS-n0T"/>
-                                                                            <constraint firstAttribute="height" constant="40" id="6Wz-vt-tg0"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="mxF-PA-fyx" secondAttribute="bottom" id="hTt-cF-NaS"/>
-                                                                            <constraint firstItem="mxF-PA-fyx" firstAttribute="leading" secondItem="uJn-To-fjO" secondAttribute="leading" id="r1D-Ft-OjP"/>
-                                                                            <constraint firstItem="mxF-PA-fyx" firstAttribute="top" secondItem="uJn-To-fjO" secondAttribute="top" id="vgs-n6-0YD"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-1G-p1n">
-                                                                        <rect key="frame" x="0.0" y="348" width="353" height="40"/>
-                                                                        <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-kI-ErX">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
-                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
-                                                                            </textField>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="height" constant="40" id="0B6-UI-taJ"/>
-                                                                            <constraint firstItem="DRc-kI-ErX" firstAttribute="leading" secondItem="57Z-1G-p1n" secondAttribute="leading" id="VgA-eA-SFo"/>
-                                                                            <constraint firstItem="DRc-kI-ErX" firstAttribute="top" secondItem="57Z-1G-p1n" secondAttribute="top" id="hqr-eS-CmH"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="DRc-kI-ErX" secondAttribute="bottom" id="vFI-et-WjA"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="DRc-kI-ErX" secondAttribute="trailing" id="wJn-Sb-v0e"/>
-                                                                        </constraints>
-                                                                    </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y24-VM-Rue">
-                                                                        <rect key="frame" x="0.0" y="408" width="353" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="288" width="353" height="40"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgi-Gi-Fhw">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
@@ -323,7 +285,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VO-kN-qyB">
-                                                                        <rect key="frame" x="0.0" y="468" width="353" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="348" width="353" height="40"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email *" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iCW-lT-Zu3">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
@@ -342,7 +304,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAD-s6-G5b">
-                                                                        <rect key="frame" x="0.0" y="528" width="353" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="408" width="353" height="40"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number *" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUF-u2-cfs">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
@@ -363,6 +325,44 @@
                                                                             <constraint firstAttribute="bottom" secondItem="DUF-u2-cfs" secondAttribute="bottom" id="fyu-0P-xfQ"/>
                                                                             <constraint firstItem="DUF-u2-cfs" firstAttribute="leading" secondItem="gAD-s6-G5b" secondAttribute="leading" id="p36-XA-hph"/>
                                                                             <constraint firstAttribute="height" constant="40" id="unM-XG-2U4"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJn-To-fjO">
+                                                                        <rect key="frame" x="0.0" y="468" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-PA-fyx">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="mxF-PA-fyx" secondAttribute="trailing" id="2Oe-zS-n0T"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="6Wz-vt-tg0"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="mxF-PA-fyx" secondAttribute="bottom" id="hTt-cF-NaS"/>
+                                                                            <constraint firstItem="mxF-PA-fyx" firstAttribute="leading" secondItem="uJn-To-fjO" secondAttribute="leading" id="r1D-Ft-OjP"/>
+                                                                            <constraint firstItem="mxF-PA-fyx" firstAttribute="top" secondItem="uJn-To-fjO" secondAttribute="top" id="vgs-n6-0YD"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-1G-p1n">
+                                                                        <rect key="frame" x="0.0" y="528" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-kI-ErX">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="0B6-UI-taJ"/>
+                                                                            <constraint firstItem="DRc-kI-ErX" firstAttribute="leading" secondItem="57Z-1G-p1n" secondAttribute="leading" id="VgA-eA-SFo"/>
+                                                                            <constraint firstItem="DRc-kI-ErX" firstAttribute="top" secondItem="57Z-1G-p1n" secondAttribute="top" id="hqr-eS-CmH"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="DRc-kI-ErX" secondAttribute="bottom" id="vFI-et-WjA"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="DRc-kI-ErX" secondAttribute="trailing" id="wJn-Sb-v0e"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-Nz-Jx7">
@@ -731,7 +731,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
