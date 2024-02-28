@@ -72,15 +72,15 @@ class SignUpVM {
         self.validateSignUpForm(fName: fullName, email: email, phoneNumber: phoneNumber, password: password, confirmPassword: confirmPassword) { status, message in
             return
         }
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            guard let user = authResult?.user, error == nil else {
-                completionWithPayload?(false,error?.localizedDescription,nil)
-                return
-            }
-            Constants.shared.currentLoggedInFirebaseAuthUser = user
-            Constants.shared.userId = user.uid
-            let firestoreUser = FirestoreUser(id: user.uid, fName: fName, phone: phoneNumber, avatarUrl: DefaultPlaceHolderLinks.user_avatar.rawValue)
-            FirestoreUserManager.shared.storeSignedUpUserDetailsOnFirestoreDb(firebaseUser: user,firestoreUser:firestoreUser, completionWithPayload: completionWithPayload)
-        }
+//        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+//            guard let user = authResult?.user, error == nil else {
+//                completionWithPayload?(false,error?.localizedDescription,nil)
+//                return
+//            }
+//            Constants.shared.currentLoggedInFirebaseAuthUser = user
+//            Constants.shared.userId = user.uid
+//            let firestoreUser = FirestoreUser(id: user.uid, fName: fName, phone: phoneNumber, avatarUrl: DefaultPlaceHolderLinks.user_avatar.rawValue)
+//            FirestoreUserManager.shared.storeSignedUpUserDetailsOnFirestoreDb(firebaseUser: user,firestoreUser:firestoreUser, completionWithPayload: completionWithPayload)
+//        }
     }
 }
