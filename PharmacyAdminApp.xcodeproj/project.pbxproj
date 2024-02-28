@@ -51,6 +51,7 @@
 		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
 		821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603B2B8E2FBA007488CA /* SignUpVC.swift */; };
 		821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603D2B8E3082007488CA /* SignUpVM.swift */; };
+		826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A7AC82B8FA01A00879806 /* ContactVM.swift */; };
 		8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */; };
 		8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */; };
 		8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9732B63CF6C00AB054C /* KeychainManager.swift */; };
@@ -139,6 +140,7 @@
 		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
 		821A603B2B8E2FBA007488CA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		821A603D2B8E3082007488CA /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		826A7AC82B8FA01A00879806 /* ContactVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVM.swift; sourceTree = "<group>"; };
 		8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
 		8287C9732B63CF6C00AB054C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				82E22F432B7540A300041D97 /* SenderTVCell.xib */,
 				82E22F482B75410A00041D97 /* ReceiverTVCell.swift */,
 				82E22F492B75410A00041D97 /* ReceiverTVCell.xib */,
+				826A7AC82B8FA01A00879806 /* ContactVM.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -734,6 +737,7 @@
 				7EDBEC0C2B590A100015AB68 /* SideMenuController+SideOver.swift in Sources */,
 				82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */,
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
+				826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
 				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,

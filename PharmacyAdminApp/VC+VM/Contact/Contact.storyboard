@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ContactVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContactVC" id="Y6W-OH-hqX" customClass="ContactVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,15 +56,19 @@
                                         <rect key="frame" x="0.0" y="200" width="393" height="568"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Bff-LE-MSM">
-                                                <rect key="frame" x="0.0" y="50" width="393" height="49"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="199" id="Bff-LE-MSM">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="199"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bff-LE-MSM" id="LMI-5h-Qea">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="199"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="3Ve-CG-ajU"/>
+                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="Mvw-dZ-Hek"/>
+                                        </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQD-i8-q1g">
                                         <rect key="frame" x="0.0" y="768" width="393" height="50"/>
@@ -90,6 +94,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QQF-3d-7eN"/>
+                    <connections>
+                        <outlet property="tableview" destination="wQV-zq-IIV" id="ujg-iN-w4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
