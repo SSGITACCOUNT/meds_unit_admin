@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="1037" y="-30"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="aGz-p5-Y1I">
             <objects>
-                <viewController id="vVS-0d-iLp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="vVS-0d-iLp" customClass="SignUpVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YDk-vz-Bim">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,6 +387,9 @@
                                                                                         <real key="value" value="0.0"/>
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="signUpAction:" destination="vVS-0d-iLp" eventType="touchUpInside" id="CYm-Nl-vMs"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -475,6 +478,13 @@
                             <constraint firstItem="wqC-Sj-FQf" firstAttribute="trailing" secondItem="NL5-Kv-11F" secondAttribute="trailing" id="xv4-Hw-KS2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="DRc-kI-ErX" id="scT-xB-JEW"/>
+                        <outlet property="emailTxt" destination="iCW-lT-Zu3" id="Hxz-pG-egb"/>
+                        <outlet property="fullNameTxt" destination="lgi-Gi-Fhw" id="sSs-IW-fze"/>
+                        <outlet property="passwordTxt" destination="mxF-PA-fyx" id="hgy-yO-7aD"/>
+                        <outlet property="phoneNumberTxt" destination="DUF-u2-cfs" id="BqW-EG-3bF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPI-im-5JW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

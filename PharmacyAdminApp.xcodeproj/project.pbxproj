@@ -49,6 +49,8 @@
 		820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */; };
 		820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EA2B6C15440092AE11 /* Extensions.swift */; };
 		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
+		821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603B2B8E2FBA007488CA /* SignUpVC.swift */; };
+		821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603D2B8E3082007488CA /* SignUpVM.swift */; };
 		8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */; };
 		8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */; };
 		8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9732B63CF6C00AB054C /* KeychainManager.swift */; };
@@ -135,6 +137,8 @@
 		820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserManager.swift; sourceTree = "<group>"; };
 		820D79EA2B6C15440092AE11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
+		821A603B2B8E2FBA007488CA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		821A603D2B8E3082007488CA /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
 		8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
 		8287C9732B63CF6C00AB054C /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -287,6 +291,7 @@
 		7EDBEBF22B58FE8E0015AB68 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				821A603A2B8E2F9D007488CA /* SignUp */,
 				7EDBEBF32B58FEBE0015AB68 /* Auth.storyboard */,
 			);
 			path = Auth;
@@ -393,6 +398,15 @@
 				7EFED9D62B57CD8800FDE1A5 /* PharmacyAdminAppUITestsLaunchTests.swift */,
 			);
 			path = PharmacyAdminAppUITests;
+			sourceTree = "<group>";
+		};
+		821A603A2B8E2F9D007488CA /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				821A603B2B8E2FBA007488CA /* SignUpVC.swift */,
+				821A603D2B8E3082007488CA /* SignUpVM.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		8287C9752B63D2B600AB054C /* Help */ = {
@@ -738,8 +752,10 @@
 				8287C9792B64D0D900AB054C /* LaunchScreenVM.swift in Sources */,
 				7EDBEC052B590A100015AB68 /* CenterContainmentSegue.swift in Sources */,
 				7EC1B4F62B5A3FFB003958E2 /* SwiftyPageControllerAnimatorDefault.swift in Sources */,
+				821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */,
 				7EDBEBF02B58F8970015AB68 /* RoundedButton.swift in Sources */,
 				7EDBEC082B590A100015AB68 /* UIKitExtensions.swift in Sources */,
+				821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */,
 				7EDBEC092B590A100015AB68 /* SideMenuController+CustomTypes.swift in Sources */,
 				7EDBEC062B590A100015AB68 /* SideContainmentSegue.swift in Sources */,
 				7EC1B4F72B5A3FFB003958E2 /* SwiftyPageControllerAnimatorParallax.swift in Sources */,
