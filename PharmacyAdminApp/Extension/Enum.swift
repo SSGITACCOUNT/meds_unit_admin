@@ -14,6 +14,7 @@ enum Storyboard: String {
     case Home
     case RoadTrip
     case Order
+    case Product
     case Setting
     case Earning
     case Location

@@ -18,4 +18,9 @@ class HomeVC: UIViewController {
         let vc = ApplicationServiceProvider.shared.viewController(in: .Order, identifier: "OrderVC")
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func productAction(_ sender: Any) {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Product, identifier: "ProductVC")
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

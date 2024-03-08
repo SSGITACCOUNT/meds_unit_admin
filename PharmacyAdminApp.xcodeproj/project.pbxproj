@@ -60,6 +60,11 @@
 		8287C97D2B64D38500AB054C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C97C2B64D38500AB054C /* Constants.swift */; };
 		8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9802B64D40400AB054C /* FirestoreUser.swift */; };
 		8287C9832B64D7ED00AB054C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9822B64D7ED00AB054C /* AlertManager.swift */; };
+		829011C42B9AE89C00EA6F7B /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829011C32B9AE89C00EA6F7B /* Product.storyboard */; };
+		829011C62B9AE8B900EA6F7B /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829011C52B9AE8B900EA6F7B /* ProductVC.swift */; };
+		829011C82B9AEA4200EA6F7B /* ProductVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829011C72B9AEA4200EA6F7B /* ProductVM.swift */; };
+		829011CA2B9AF81400EA6F7B /* ProductCategoryTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829011C92B9AF81400EA6F7B /* ProductCategoryTVCell.swift */; };
+		829011CC2B9AF82800EA6F7B /* ProductCategoryCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829011CB2B9AF82700EA6F7B /* ProductCategoryCVCell.swift */; };
 		829245E22B89FAB6005023B5 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 829245E12B89FAB6005023B5 /* FirebaseCrashlytics */; };
 		829245E62B8A03C8005023B5 /* Pods_PharmacyAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */; };
 		829245F02B8A0BC0005023B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 829245EF2B8A0BC0005023B5 /* GoogleService-Info.plist */; };
@@ -149,6 +154,11 @@
 		8287C97C2B64D38500AB054C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8287C9802B64D40400AB054C /* FirestoreUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUser.swift; sourceTree = "<group>"; };
 		8287C9822B64D7ED00AB054C /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		829011C32B9AE89C00EA6F7B /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		829011C52B9AE8B900EA6F7B /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
+		829011C72B9AEA4200EA6F7B /* ProductVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVM.swift; sourceTree = "<group>"; };
+		829011C92B9AF81400EA6F7B /* ProductCategoryTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryTVCell.swift; sourceTree = "<group>"; };
+		829011CB2B9AF82700EA6F7B /* ProductCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCVCell.swift; sourceTree = "<group>"; };
 		829245EF2B8A0BC0005023B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82E22F422B7540A300041D97 /* SenderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTVCell.swift; sourceTree = "<group>"; };
 		82E22F432B7540A300041D97 /* SenderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTVCell.xib; sourceTree = "<group>"; };
@@ -431,6 +441,7 @@
 				7EDBEBF52B58FEEF0015AB68 /* Home */,
 				7EC1B4E12B593B6C003958E2 /* Order */,
 				7EC1B4E42B5A3728003958E2 /* Contact */,
+				829011C22B9AE88200EA6F7B /* Product */,
 			);
 			path = "VC+VM";
 			sourceTree = "<group>";
@@ -442,6 +453,18 @@
 				820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		829011C22B9AE88200EA6F7B /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				829011C32B9AE89C00EA6F7B /* Product.storyboard */,
+				829011C52B9AE8B900EA6F7B /* ProductVC.swift */,
+				829011C72B9AEA4200EA6F7B /* ProductVM.swift */,
+				829011C92B9AF81400EA6F7B /* ProductCategoryTVCell.swift */,
+				829011CB2B9AF82700EA6F7B /* ProductCategoryCVCell.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDBEC042B590A100015AB68 /* LICENSE in Resources */,
+				829011C42B9AE89C00EA6F7B /* Product.storyboard in Resources */,
 				82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */,
 				7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */,
 				7EDBEBF42B58FEBE0015AB68 /* Auth.storyboard in Resources */,
@@ -721,12 +745,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				829011C62B9AE8B900EA6F7B /* ProductVC.swift in Sources */,
 				7EDBEC0F2B5912870015AB68 /* SideMenuConfigurationVC.swift in Sources */,
 				7EC1B4EA2B5A3A57003958E2 /* OrderVC.swift in Sources */,
 				8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */,
 				7EC1B4F92B5A4107003958E2 /* Enum.swift in Sources */,
 				7EFED9B82B57CD8600FDE1A5 /* ViewController.swift in Sources */,
 				7EC1B4FD2B5A47F1003958E2 /* PastOrderTVCell.swift in Sources */,
+				829011CA2B9AF81400EA6F7B /* ProductCategoryTVCell.swift in Sources */,
 				8287C97B2B64D11000AB054C /* Handler.swift in Sources */,
 				7EC1B4E62B5A3744003958E2 /* ContactVC.swift in Sources */,
 				7EDBEC122B591A9E0015AB68 /* SideMenuVC.swift in Sources */,
@@ -741,6 +767,7 @@
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
 				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,
+				829011CC2B9AF82800EA6F7B /* ProductCategoryCVCell.swift in Sources */,
 				82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
@@ -763,6 +790,7 @@
 				7EDBEC092B590A100015AB68 /* SideMenuController+CustomTypes.swift in Sources */,
 				7EDBEC062B590A100015AB68 /* SideContainmentSegue.swift in Sources */,
 				7EC1B4F72B5A3FFB003958E2 /* SwiftyPageControllerAnimatorParallax.swift in Sources */,
+				829011C82B9AEA4200EA6F7B /* ProductVM.swift in Sources */,
 				7EC1B4FB2B5A47E0003958E2 /* OngoingOrderTVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
