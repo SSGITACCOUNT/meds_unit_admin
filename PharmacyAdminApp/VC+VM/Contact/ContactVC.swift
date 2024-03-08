@@ -15,6 +15,9 @@ class ContactVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.estimatedRowHeight = 100
+        tableview.rowHeight = UITableView.automaticDimension
+        
         tableview.register(UINib(nibName: "SenderTVCell", bundle: nil), forCellReuseIdentifier: "SenderTVCell")
         tableview.register(UINib(nibName: "ReceiverTVCell", bundle: nil), forCellReuseIdentifier: "ReceiverTVCell")
         
@@ -23,12 +26,28 @@ class ContactVC: UIViewController {
 
 extension ContactVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return vm.chatModel.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTVCell", for: indexPath)
-        return cell
+        let model = vm.chatModel[indexPath.row]
+        if model.isSender == true {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SenderTVCell", for: indexPath)
+            if let _cell = cell as? SenderTVCell {
+                _cell.configCell(model: model)
+            }
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverTVCell", for: indexPath)
+            if let _cell = cell as? ReceiverTVCell {
+                _cell.configCell(model: model)
+            }
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
     }
 }
 

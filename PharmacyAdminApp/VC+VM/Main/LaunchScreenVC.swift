@@ -42,7 +42,6 @@ class LaunchScreenVC: UIViewController {
         FirestoreUserManager.shared.getUserDetailsStoredOnFirestoreDb(firebaseUser:user) { status, message, data in
             if (status){
                 var firestoreUser =  data as! FirestoreUser
-                Constants.shared.isAdmin = firestoreUser.isAdmin
                 Constants.shared.currentLoggedInFireStoreUser = firestoreUser
                 self.handleNavigationAccordingToUserRole(firestoreUser: firestoreUser)
             }else{
@@ -58,11 +57,6 @@ class LaunchScreenVC: UIViewController {
     }
     
     private func handleNavigationAccordingToUserRole(firestoreUser:FirestoreUser){
-        if(firestoreUser.isAdmin){
-            checkStoreAvailabilityAndNavigate(firestoreUser: firestoreUser)
-        }else{
-            navigateToHomeVc(isAdmin: false)
-        }
     }
     
     private func checkStoreAvailabilityAndNavigate(firestoreUser:FirestoreUser){
