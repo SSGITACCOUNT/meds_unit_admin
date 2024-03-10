@@ -28,4 +28,8 @@ class DashboardVC: UIViewController {
     func setupUI() {
         
     }
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

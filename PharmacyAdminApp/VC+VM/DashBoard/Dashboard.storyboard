@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theme" translatesAutoresizingMaskIntoConstraints="NO" id="Mvj-BT-grZ">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backGround 1" translatesAutoresizingMaskIntoConstraints="NO" id="Mvj-BT-grZ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PDE-mg-qB2">
                                 <rect key="frame" x="16" y="75" width="361" height="777"/>
@@ -32,11 +32,25 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gq6-76-q3B">
+                                                <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="dQ8-pW-NsF"/>
+                                                    <constraint firstAttribute="height" constant="30" id="de5-gk-HuZ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="left-arrow"/>
+                                                <connections>
+                                                    <action selector="backAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hip-qb-YfW"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Cv1-BO-4rz" firstAttribute="centerY" secondItem="mrM-j1-r7U" secondAttribute="centerY" id="0aE-WO-1Rg"/>
                                             <constraint firstAttribute="height" constant="40" id="CyS-Dx-QgY"/>
+                                            <constraint firstItem="Gq6-76-q3B" firstAttribute="centerY" secondItem="mrM-j1-r7U" secondAttribute="centerY" id="EgZ-hs-V7h"/>
+                                            <constraint firstItem="Gq6-76-q3B" firstAttribute="leading" secondItem="mrM-j1-r7U" secondAttribute="leading" id="NeJ-Y9-emW"/>
                                             <constraint firstAttribute="trailing" secondItem="Cv1-BO-4rz" secondAttribute="trailing" constant="16" id="pYO-kt-WVv"/>
                                             <constraint firstItem="Cv1-BO-4rz" firstAttribute="leading" secondItem="mrM-j1-r7U" secondAttribute="leading" constant="16" id="xnP-zG-pNm"/>
                                         </constraints>
@@ -294,7 +308,7 @@
                             <constraint firstItem="PDE-mg-qB2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="UEv-NB-jNJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PDE-mg-qB2" secondAttribute="trailing" constant="16" id="bq4-F9-xr9"/>
                             <constraint firstItem="PDE-mg-qB2" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="o9M-OV-e9a"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Mvj-BT-grZ" secondAttribute="bottom" id="yM2-jw-vH5"/>
+                            <constraint firstItem="Mvj-BT-grZ" firstAttribute="bottom" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" id="yM2-jw-vH5"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -304,11 +318,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backGround 1" width="1200" height="800"/>
         <image name="customer_icon" width="50" height="50"/>
+        <image name="left-arrow" width="512" height="512"/>
         <image name="no-product" width="50" height="50"/>
         <image name="profit" width="50" height="50"/>
         <image name="sale" width="50" height="50"/>
-        <image name="theme" width="1073" height="1907"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

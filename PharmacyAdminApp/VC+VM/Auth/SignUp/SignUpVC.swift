@@ -30,6 +30,6 @@ class SignUpVC: UIViewController {
     
 
     @IBAction func signUpAction(_ sender: Any) {
-        
+        userSignUpAction()
     }
 }
