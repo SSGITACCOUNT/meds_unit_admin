@@ -71,6 +71,8 @@
 		82DB75BA2B9B1B7500002567 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DB75B92B9B1B7500002567 /* Dashboard.storyboard */; };
 		82DB75BC2B9B1B8F00002567 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */; };
 		82DB75BE2B9B1B9800002567 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BD2B9B1B9800002567 /* DashboardVM.swift */; };
+		82DB75C52B9EAE2600002567 /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75C42B9EAE2600002567 /* OrderDetailsVC.swift */; };
+		82DB75C72B9EB0DC00002567 /* OrderDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75C62B9EB0DC00002567 /* OrderDetailsVM.swift */; };
 		82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F422B7540A300041D97 /* SenderTVCell.swift */; };
 		82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E22F432B7540A300041D97 /* SenderTVCell.xib */; };
 		82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F482B75410A00041D97 /* ReceiverTVCell.swift */; };
@@ -166,6 +168,8 @@
 		82DB75B92B9B1B7500002567 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		82DB75BD2B9B1B9800002567 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
+		82DB75C42B9EAE2600002567 /* OrderDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
+		82DB75C62B9EB0DC00002567 /* OrderDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVM.swift; sourceTree = "<group>"; };
 		82E22F422B7540A300041D97 /* SenderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTVCell.swift; sourceTree = "<group>"; };
 		82E22F432B7540A300041D97 /* SenderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTVCell.xib; sourceTree = "<group>"; };
 		82E22F482B75410A00041D97 /* ReceiverTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVCell.swift; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				7EC1B4EB2B5A3F34003958E2 /* OngoingOrder */,
 				7EC1B4EC2B5A3F66003958E2 /* PastOrder */,
 				7EC1B4E92B5A3A57003958E2 /* OrderVC.swift */,
+				82DB75C42B9EAE2600002567 /* OrderDetailsVC.swift */,
+				82DB75C62B9EB0DC00002567 /* OrderDetailsVM.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -773,6 +779,7 @@
 				829011CA2B9AF81400EA6F7B /* ProductCategoryTVCell.swift in Sources */,
 				8287C97B2B64D11000AB054C /* Handler.swift in Sources */,
 				7EC1B4E62B5A3744003958E2 /* ContactVC.swift in Sources */,
+				82DB75C52B9EAE2600002567 /* OrderDetailsVC.swift in Sources */,
 				7EDBEC122B591A9E0015AB68 /* SideMenuVC.swift in Sources */,
 				820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */,
 				7EC1B4F02B5A3FAB003958E2 /* PastOrderVC.swift in Sources */,
@@ -787,6 +794,7 @@
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
 				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,
 				829011CC2B9AF82800EA6F7B /* ProductCategoryCVCell.swift in Sources */,
+				82DB75C72B9EB0DC00002567 /* OrderDetailsVM.swift in Sources */,
 				82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
@@ -1001,7 +1009,7 @@
 				INFOPLIST_FILE = PharmacyAdminApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1032,7 +1040,7 @@
 				INFOPLIST_FILE = PharmacyAdminApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Auth;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
