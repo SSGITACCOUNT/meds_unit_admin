@@ -4,12 +4,13 @@
 target 'PharmacyAdminApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'KeychainAccess'
-
+  
+pod 'KeychainAccess'
 pod 'FirebaseAnalytics'
 pod 'FirebaseStorage'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
+pod 'FirebaseCore'
 
     # Pods for PharmacyAdminApp
 
