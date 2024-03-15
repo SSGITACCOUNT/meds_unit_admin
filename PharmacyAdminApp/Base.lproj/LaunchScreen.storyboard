@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="0ud-Q1-pkd">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="459" width="393" height="359"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0ud-Q1-pkd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MK6-Td-jhS"/>
-                            <constraint firstItem="0ud-Q1-pkd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MfB-NU-S8e"/>
+                            <constraint firstItem="0ud-Q1-pkd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="MfB-NU-S8e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ud-Q1-pkd" secondAttribute="bottom" id="afU-tm-xCz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ud-Q1-pkd" secondAttribute="trailing" id="eoP-04-tui"/>
                         </constraints>

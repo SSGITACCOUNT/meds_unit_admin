@@ -20,21 +20,18 @@ class LaunchScreenVC: UIViewController {
     
     //:MARK check user authentication on firebase
     private func checkIsUserAuthenticatedOnFirebase(){
-        self.navigateToHomeVc(isAdmin: true)
-//        vm.checkIsUserAuthenticatedFromFirebase { [weak self] status, message,data in
-//            guard let _ = self else { return }
-//            //                        try! Auth.auth().signOut() // TODO:  remove this after testing
-//            //            self.handleUserNavigation(isUserAuthenticated: status)
-//            if(status){
-//                print("***** User Authenticated ******")
-//                if let _model = data as? User {
-//                    self?.handleAuthenticatedUser(user: _model)
-//                }
-//            }else{
-//                self?.handleUserNavigation(isUserAuthenticated: status)
-//                print("***** User Not Authenticated ******")
-//            }
-//        }
+        vm.checkIsUserAuthenticatedFromFirebase { [weak self] status, message,data in
+            guard let _ = self else { return }
+            if(status){
+                print("***** User Authenticated ******")
+                if let _model = data as? User {
+                    self?.handleAuthenticatedUser(user: _model)
+                }
+            }else{
+                self?.handleUserNavigation(isUserAuthenticated: status)
+                print("***** User Not Authenticated ******")
+            }
+        }
     }
     
     private func handleAuthenticatedUser(user:User){

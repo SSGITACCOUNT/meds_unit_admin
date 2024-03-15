@@ -77,10 +77,12 @@ class SignUpVM {
                 completionWithPayload?(false,error?.localizedDescription,nil)
                 return
             }
-//            Constants.shared.currentLoggedInFirebaseAuthUser = user
-//            Constants.shared.userId = user.uid
-//            let firestoreUser = FirestoreUser(id: user.uid, fName: fName, phone: phoneNumber, avatarUrl: DefaultPlaceHolderLinks.user_avatar.rawValue)
-//            FirestoreUserManager.shared.storeSignedUpUserDetailsOnFirestoreDb(firebaseUser: user,firestoreUser:firestoreUser, completionWithPayload: completionWithPayload)
+            Constants.shared.currentLoggedInFirebaseAuthUser = user
+            Constants.shared.userId = user.uid
+            guard let _fullName = fullName, let _phoneNumber = phoneNumber else { return }
+            let firestoreUser = FirestoreUser(id: user.uid, fName: _fullName, phone: _phoneNumber, avatarUrl: DefaultPlaceHolderLinks.user_avatar.rawValue)
+            FirestoreUserManager.shared.storeSignedUpUserDetailsOnFirestoreDb(firebaseUser: user,firestoreUser:firestoreUser, completionWithPayload: completionWithPayload)
+            completionWithPayload?(true, error?.localizedDescription, authResult)
         }
     }
 }
