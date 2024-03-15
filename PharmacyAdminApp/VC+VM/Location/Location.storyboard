@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set Location On Map View-->
+        <scene sceneID="eiL-8s-OGA">
+            <objects>
+                <viewController storyboardIdentifier="SetLocationOnMapView" id="Iqm-of-WvT" customClass="SetLocationOnMapView" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A33-9k-mZa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcE-B2-6NL" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBi-ir-6ef" customClass="RoundedButton" customModule="PharmacyAdminApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="754" width="361" height="44"/>
+                                <color key="backgroundColor" name="theme_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="diS-kc-GGj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Set Location">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Voj-UK-zBo">
+                                <rect key="frame" x="50" y="79" width="293" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tib-kS-bN7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_center_pin" translatesAutoresizingMaskIntoConstraints="NO" id="Kmi-vo-K2u">
+                                <rect key="frame" x="176.66666666666666" y="408.66666666666669" width="40" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="c3B-yM-IJs"/>
+                                    <constraint firstAttribute="width" constant="40" id="ygp-eY-poJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pBY-T5-Mxx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kmi-vo-K2u" firstAttribute="centerY" secondItem="pBY-T5-Mxx" secondAttribute="centerY" id="3wQ-7N-wmi"/>
+                            <constraint firstItem="OcE-B2-6NL" firstAttribute="bottom" secondItem="A33-9k-mZa" secondAttribute="bottom" id="4M7-d4-Hfl"/>
+                            <constraint firstItem="yBi-ir-6ef" firstAttribute="leading" secondItem="pBY-T5-Mxx" secondAttribute="leading" constant="16" id="6J2-ka-f3F"/>
+                            <constraint firstItem="Voj-UK-zBo" firstAttribute="top" secondItem="pBY-T5-Mxx" secondAttribute="top" constant="20" id="F9B-zy-G46"/>
+                            <constraint firstItem="Voj-UK-zBo" firstAttribute="leading" secondItem="pBY-T5-Mxx" secondAttribute="leading" constant="50" id="H3t-Q5-IUO"/>
+                            <constraint firstItem="Kmi-vo-K2u" firstAttribute="centerX" secondItem="pBY-T5-Mxx" secondAttribute="centerX" id="MRc-77-gax"/>
+                            <constraint firstItem="pBY-T5-Mxx" firstAttribute="trailing" secondItem="OcE-B2-6NL" secondAttribute="trailing" id="Q6z-cn-IEh"/>
+                            <constraint firstItem="pBY-T5-Mxx" firstAttribute="trailing" secondItem="Voj-UK-zBo" secondAttribute="trailing" constant="50" id="cUy-DE-rFn"/>
+                            <constraint firstItem="OcE-B2-6NL" firstAttribute="leading" secondItem="pBY-T5-Mxx" secondAttribute="leading" id="eky-ul-Yus"/>
+                            <constraint firstItem="pBY-T5-Mxx" firstAttribute="bottom" secondItem="yBi-ir-6ef" secondAttribute="bottom" constant="20" id="vPH-XR-DzQ"/>
+                            <constraint firstItem="OcE-B2-6NL" firstAttribute="top" secondItem="A33-9k-mZa" secondAttribute="top" id="vaO-SB-Chi"/>
+                            <constraint firstItem="pBY-T5-Mxx" firstAttribute="trailing" secondItem="yBi-ir-6ef" secondAttribute="trailing" constant="16" id="wFs-J7-Sei"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="OcE-B2-6NL" id="00m-PJ-gTK"/>
+                        <outlet property="searchTxt" destination="Voj-UK-zBo" id="YKq-Zm-gpB"/>
+                        <outlet property="setLocationBtn" destination="yBi-ir-6ef" id="M0V-LR-6xL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLY-vI-V1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240" y="70"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="yBi-ir-6ef">
+            <size key="intrinsicContentSize" width="97" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="map_center_pin" width="21" height="37"/>
+        <namedColor name="theme_color">
+            <color red="0.17599999904632568" green="0.60799998044967651" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -22,20 +22,22 @@ class SignUpVC: UIViewController {
         
     }
     
-    func navigateToLoginView() {
-        ApplicationServiceProvider.shared.manageUserDirection(isUserAuthenticated: true)
+    func navigateOnSuccessfullSignUp() {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "StoreRegisterVC")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func userSignUpAction() {
-        navigateToLoginView()
-//        vm.createNewUserOnFirebase(fullName: fullNameTxt.text, email: emailTxt.text, phoneNumber: phoneNumberTxt.text, password: passwordTxt.text, confirmPassword: confirmPassword.text) { [weak self] status, message, data in
-//            guard let _ = self else { return } 
-//            if status {
-//                self?.navigateToLoginView()
-//            } else {
-//                AlertManager.shared.singleActionMessage(title: "Alert!", message: message ?? "", actionButtonTitle: "Ok", vc: self!)
-//            }
-//        }
+        vm.createNewUserOnFirebase(fullName: fullNameTxt.text, email: emailTxt.text, phoneNumber: phoneNumberTxt.text, password: passwordTxt.text, confirmPassword: confirmPassword.text) { [weak self] status, message, data in
+            guard let _ = self else { return } 
+            if status {
+                let firebaseUser = data as? FirestoreUser
+                Constants.shared.currentLoggedInFireStoreUser = firebaseUser
+                self?.navigateOnSuccessfullSignUp()
+            } else {
+                AlertManager.shared.singleActionMessage(title: "Alert!", message: message ?? "", actionButtonTitle: "Ok", vc: self!)
+            }
+        }
     }
     
 

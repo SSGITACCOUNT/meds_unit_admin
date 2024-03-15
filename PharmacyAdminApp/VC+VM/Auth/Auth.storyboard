@@ -491,10 +491,10 @@
             </objects>
             <point key="canvasLocation" x="2791.6030534351144" y="-30.281690140845072"/>
         </scene>
-        <!--View Controller-->
+        <!--Store RegisterVC-->
         <scene sceneID="XgQ-Ui-DS7">
             <objects>
-                <viewController id="UI2-c5-kp7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StoreRegisterVC" id="UI2-c5-kp7" customClass="StoreRegisterVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lxt-FM-dGo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,10 +507,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kP-qt-1IL">
-                                        <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                        <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jaM-bm-r4K">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4h-hq-gkc">
                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="568.33333333333337"/>
@@ -542,54 +542,8 @@
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-bd-ycq">
-                                                                        <rect key="frame" x="0.0" y="278.33333333333331" width="353" height="40"/>
-                                                                        <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Number*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBV-68-JUE">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
-                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
-                                                                            </textField>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstItem="JBV-68-JUE" firstAttribute="top" secondItem="T0G-bd-ycq" secondAttribute="top" id="2My-e0-EHF"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="JBV-68-JUE" secondAttribute="trailing" id="XAj-hU-UNN"/>
-                                                                            <constraint firstItem="JBV-68-JUE" firstAttribute="leading" secondItem="T0G-bd-ycq" secondAttribute="leading" id="fe0-mP-eey"/>
-                                                                            <constraint firstAttribute="height" constant="40" id="hAv-vo-led"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="JBV-68-JUE" secondAttribute="bottom" id="xZz-zF-nD8"/>
-                                                                        </constraints>
-                                                                    </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXI-Uk-ezx">
-                                                                        <rect key="frame" x="0.0" y="338.33333333333331" width="353" height="40"/>
-                                                                        <subviews>
-                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shop Address*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-m9-ZWf">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
-                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
-                                                                            </textField>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwE-mD-wbL">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
-                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                                            </button>
-                                                                        </subviews>
-                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="trailing" secondItem="xAx-m9-ZWf" secondAttribute="trailing" id="5lt-L5-Kkj"/>
-                                                                            <constraint firstItem="YwE-mD-wbL" firstAttribute="leading" secondItem="qXI-Uk-ezx" secondAttribute="leading" id="NpC-90-0cX"/>
-                                                                            <constraint firstAttribute="height" constant="40" id="YeP-rX-pVV"/>
-                                                                            <constraint firstItem="YwE-mD-wbL" firstAttribute="top" secondItem="qXI-Uk-ezx" secondAttribute="top" id="Zzk-08-qDU"/>
-                                                                            <constraint firstItem="xAx-m9-ZWf" firstAttribute="leading" secondItem="qXI-Uk-ezx" secondAttribute="leading" id="bdX-ff-jk7"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="YwE-mD-wbL" secondAttribute="trailing" id="dus-wv-fDR"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="xAx-m9-ZWf" secondAttribute="bottom" id="gS3-4g-wJE"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="YwE-mD-wbL" secondAttribute="bottom" id="neX-dr-GvG"/>
-                                                                            <constraint firstItem="xAx-m9-ZWf" firstAttribute="top" secondItem="qXI-Uk-ezx" secondAttribute="top" id="y0V-MJ-hpE"/>
-                                                                        </constraints>
-                                                                    </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rO7-iS-s0I">
-                                                                        <rect key="frame" x="0.0" y="398.33333333333331" width="353" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="278.33333333333331" width="353" height="40"/>
                                                                         <subviews>
                                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shop Name*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="55C-TC-KdZ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
@@ -605,6 +559,55 @@
                                                                             <constraint firstAttribute="height" constant="40" id="Fub-Ia-WwO"/>
                                                                             <constraint firstItem="55C-TC-KdZ" firstAttribute="leading" secondItem="rO7-iS-s0I" secondAttribute="leading" id="Ubm-kb-yN0"/>
                                                                             <constraint firstAttribute="trailing" secondItem="55C-TC-KdZ" secondAttribute="trailing" id="izF-Uy-Xw3"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXI-Uk-ezx">
+                                                                        <rect key="frame" x="0.0" y="338.33333333333331" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Shop Address*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAx-m9-ZWf">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                                                                            </textField>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwE-mD-wbL">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <connections>
+                                                                                    <action selector="navigateToMapViewAction:" destination="UI2-c5-kp7" eventType="touchUpInside" id="VRs-aQ-Kmk"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="xAx-m9-ZWf" secondAttribute="trailing" id="5lt-L5-Kkj"/>
+                                                                            <constraint firstItem="YwE-mD-wbL" firstAttribute="leading" secondItem="qXI-Uk-ezx" secondAttribute="leading" id="NpC-90-0cX"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="YeP-rX-pVV"/>
+                                                                            <constraint firstItem="YwE-mD-wbL" firstAttribute="top" secondItem="qXI-Uk-ezx" secondAttribute="top" id="Zzk-08-qDU"/>
+                                                                            <constraint firstItem="xAx-m9-ZWf" firstAttribute="leading" secondItem="qXI-Uk-ezx" secondAttribute="leading" id="bdX-ff-jk7"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="YwE-mD-wbL" secondAttribute="trailing" id="dus-wv-fDR"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="xAx-m9-ZWf" secondAttribute="bottom" id="gS3-4g-wJE"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="YwE-mD-wbL" secondAttribute="bottom" id="neX-dr-GvG"/>
+                                                                            <constraint firstItem="xAx-m9-ZWf" firstAttribute="top" secondItem="qXI-Uk-ezx" secondAttribute="top" id="y0V-MJ-hpE"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0G-bd-ycq">
+                                                                        <rect key="frame" x="0.0" y="398.33333333333331" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contact Number*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBV-68-JUE">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                                                                            </textField>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="JBV-68-JUE" firstAttribute="top" secondItem="T0G-bd-ycq" secondAttribute="top" id="2My-e0-EHF"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="JBV-68-JUE" secondAttribute="trailing" id="XAj-hU-UNN"/>
+                                                                            <constraint firstItem="JBV-68-JUE" firstAttribute="leading" secondItem="T0G-bd-ycq" secondAttribute="leading" id="fe0-mP-eey"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="hAv-vo-led"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="JBV-68-JUE" secondAttribute="bottom" id="xZz-zF-nD8"/>
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lF5-Zk-vgF">
@@ -648,6 +651,9 @@
                                                                                         <real key="value" value="0.0"/>
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="addAction:" destination="UI2-c5-kp7" eventType="touchUpInside" id="tEf-ng-10s"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -712,10 +718,17 @@
                             <constraint firstItem="DQ4-Wi-Yss" firstAttribute="top" secondItem="3kP-qt-1IL" secondAttribute="top" id="qWd-ab-JgL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KTu-kF-Hap"/>
+                    <connections>
+                        <outlet property="contactNumberTxt" destination="JBV-68-JUE" id="9bW-85-YJ6"/>
+                        <outlet property="emailTxt" destination="kHP-mh-PRi" id="EWB-xq-eKS"/>
+                        <outlet property="shopAddressTxt" destination="xAx-m9-ZWf" id="A2n-f5-O1t"/>
+                        <outlet property="shopNameLbl" destination="55C-TC-KdZ" id="CaM-kK-joN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfA-be-iVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3588.5496183206105" y="-30.281690140845072"/>
+            <point key="canvasLocation" x="4515.2671755725187" y="-30.281690140845072"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TDA-Xh-rR1">
@@ -779,6 +792,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgx-85-ErM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1086" y="-28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="63i-8k-QW8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GhO-k1-VBR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qpb-aZ-cb6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UI2-c5-kp7" kind="relationship" relationship="rootViewController" id="dgI-vX-nIi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce8-Yg-1MU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3588.5496183206105" y="-30.281690140845072"/>
         </scene>
     </scenes>
     <designables>

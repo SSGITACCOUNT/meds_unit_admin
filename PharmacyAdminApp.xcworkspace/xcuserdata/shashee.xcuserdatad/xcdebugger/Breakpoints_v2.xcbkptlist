@@ -7,38 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C8C2A458-78D9-4E1D-82A7-999F33BEEE88"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Auth/SignUp/SignUpVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "userSignUpAction()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D91E5737-86C6-4E84-A4BE-342D5489B4B6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Auth/SignUp/SignUpVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "navigateToLoginView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "651028E2-B15A-4F39-92DC-63740A577FC5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -49,22 +17,6 @@
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "manageUserDirection(isUserAuthenticated:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "53AA4A14-097B-49D2-88E0-4736D564EBCD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -87,54 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "68D41E33-7547-4CF8-B85A-2BB60E142B59"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "checkIsUserAuthenticatedOnFirebase()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "68D41E33-7547-4CF8-B85A-2BB60E142B59 - 7094397a41491d1b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PharmacyAdminApp.LaunchScreenVC.checkIsUserAuthenticatedOnFirebase() -&gt; ()"
-                  moduleName = "PharmacyAdminApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "68D41E33-7547-4CF8-B85A-2BB60E142B59 - c29539e3cb39be67"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Any&gt;) -&gt; () in PharmacyAdminApp.LaunchScreenVC.checkIsUserAuthenticatedOnFirebase() -&gt; ()"
-                  moduleName = "PharmacyAdminApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EF527B06-5B4E-4B9A-A666-AB02173D414A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -145,38 +49,6 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "checkIsUserAuthenticatedFromFirebase(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E2328CE-A78A-47C8-B4D3-C0A47233CB26"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "checkIsUserAuthenticatedOnFirebase()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1FA38B12-3143-4110-8E2D-7E0594984474"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "handleAuthenticatedUser(user:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

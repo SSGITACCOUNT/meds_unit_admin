@@ -73,6 +73,15 @@
 		82DB75BE2B9B1B9800002567 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BD2B9B1B9800002567 /* DashboardVM.swift */; };
 		82DB75C52B9EAE2600002567 /* OrderDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75C42B9EAE2600002567 /* OrderDetailsVC.swift */; };
 		82DB75C72B9EB0DC00002567 /* OrderDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75C62B9EB0DC00002567 /* OrderDetailsVM.swift */; };
+		82E1235A2BA4ECFA005A9E13 /* StoreRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E123592BA4ECFA005A9E13 /* StoreRegisterVC.swift */; };
+		82E1235C2BA4ED4F005A9E13 /* StoreRegisterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1235B2BA4ED4F005A9E13 /* StoreRegisterVM.swift */; };
+		82E1235F2BA4EE1D005A9E13 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E1235E2BA4EE1D005A9E13 /* Location.storyboard */; };
+		82E123622BA4EEC7005A9E13 /* SetLocationOnMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E123612BA4EEC7005A9E13 /* SetLocationOnMapView.swift */; };
+		82E123642BA4F16D005A9E13 /* GeocodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E123632BA4F16D005A9E13 /* GeocodeHelper.swift */; };
+		82E123682BA4F1EA005A9E13 /* GoogleMapsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E123672BA4F1EA005A9E13 /* GoogleMapsManager.swift */; };
+		82E1236A2BA4F1ED005A9E13 /* RecentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E123692BA4F1ED005A9E13 /* RecentLocation.swift */; };
+		82E1236C2BA4F1EF005A9E13 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1236B2BA4F1EF005A9E13 /* LocationManager.swift */; };
+		82E1236E2BA4F25D005A9E13 /* MapUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1236D2BA4F25D005A9E13 /* MapUtils.swift */; };
 		82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F422B7540A300041D97 /* SenderTVCell.swift */; };
 		82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E22F432B7540A300041D97 /* SenderTVCell.xib */; };
 		82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E22F482B75410A00041D97 /* ReceiverTVCell.swift */; };
@@ -171,6 +180,15 @@
 		82DB75BD2B9B1B9800002567 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
 		82DB75C42B9EAE2600002567 /* OrderDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVC.swift; sourceTree = "<group>"; };
 		82DB75C62B9EB0DC00002567 /* OrderDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsVM.swift; sourceTree = "<group>"; };
+		82E123592BA4ECFA005A9E13 /* StoreRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRegisterVC.swift; sourceTree = "<group>"; };
+		82E1235B2BA4ED4F005A9E13 /* StoreRegisterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreRegisterVM.swift; sourceTree = "<group>"; };
+		82E1235E2BA4EE1D005A9E13 /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		82E123612BA4EEC7005A9E13 /* SetLocationOnMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLocationOnMapView.swift; sourceTree = "<group>"; };
+		82E123632BA4F16D005A9E13 /* GeocodeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeHelper.swift; sourceTree = "<group>"; };
+		82E123672BA4F1EA005A9E13 /* GoogleMapsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsManager.swift; sourceTree = "<group>"; };
+		82E123692BA4F1ED005A9E13 /* RecentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLocation.swift; sourceTree = "<group>"; };
+		82E1236B2BA4F1EF005A9E13 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		82E1236D2BA4F25D005A9E13 /* MapUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapUtils.swift; sourceTree = "<group>"; };
 		82E22F422B7540A300041D97 /* SenderTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderTVCell.swift; sourceTree = "<group>"; };
 		82E22F432B7540A300041D97 /* SenderTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderTVCell.xib; sourceTree = "<group>"; };
 		82E22F482B75410A00041D97 /* ReceiverTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVCell.swift; sourceTree = "<group>"; };
@@ -316,6 +334,7 @@
 		7EDBEBF22B58FE8E0015AB68 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				82E123582BA4ECDD005A9E13 /* StoreRegister */,
 				82A6CE352BA29D8500E08DF8 /* New Group */,
 				821A603A2B8E2F9D007488CA /* SignUp */,
 				7EDBEBF32B58FEBE0015AB68 /* Auth.storyboard */,
@@ -438,10 +457,15 @@
 		8287C9752B63D2B600AB054C /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				82E123672BA4F1EA005A9E13 /* GoogleMapsManager.swift */,
+				82E123692BA4F1ED005A9E13 /* RecentLocation.swift */,
+				82E1236B2BA4F1EF005A9E13 /* LocationManager.swift */,
 				8287C97A2B64D11000AB054C /* Handler.swift */,
 				8287C97C2B64D38500AB054C /* Constants.swift */,
 				8287C9822B64D7ED00AB054C /* AlertManager.swift */,
 				820D79EA2B6C15440092AE11 /* Extensions.swift */,
+				82E123632BA4F16D005A9E13 /* GeocodeHelper.swift */,
+				82E1236D2BA4F25D005A9E13 /* MapUtils.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -455,6 +479,7 @@
 				7EC1B4E12B593B6C003958E2 /* Order */,
 				7EC1B4E42B5A3728003958E2 /* Contact */,
 				829011C22B9AE88200EA6F7B /* Product */,
+				82E1235D2BA4EE0A005A9E13 /* Location */,
 				82DB75B82B9B1B4800002567 /* DashBoard */,
 			);
 			path = "VC+VM";
@@ -499,6 +524,32 @@
 			path = DashBoard;
 			sourceTree = "<group>";
 		};
+		82E123582BA4ECDD005A9E13 /* StoreRegister */ = {
+			isa = PBXGroup;
+			children = (
+				82E123592BA4ECFA005A9E13 /* StoreRegisterVC.swift */,
+				82E1235B2BA4ED4F005A9E13 /* StoreRegisterVM.swift */,
+			);
+			path = StoreRegister;
+			sourceTree = "<group>";
+		};
+		82E1235D2BA4EE0A005A9E13 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				82E1235E2BA4EE1D005A9E13 /* Location.storyboard */,
+				82E123602BA4EE45005A9E13 /* SetLocation */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		82E123602BA4EE45005A9E13 /* SetLocation */ = {
+			isa = PBXGroup;
+			children = (
+				82E123612BA4EEC7005A9E13 /* SetLocationOnMapView.swift */,
+			);
+			path = SetLocation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +563,7 @@
 				7EFED9AE2B57CD8600FDE1A5 /* Resources */,
 				829245E52B89FD0B005023B5 /* ShellScript */,
 				59BE286C33FDBAF3B5A70354 /* [CP] Embed Pods Frameworks */,
+				EAD2E009F5AA8D942EE70E21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -550,6 +602,7 @@
 				7EFED9CD2B57CD8800FDE1A5 /* Frameworks */,
 				7EFED9CE2B57CD8800FDE1A5 /* Resources */,
 				67E65527182FA4DC4B0A2339 /* [CP] Embed Pods Frameworks */,
+				BAFE89DEB1C97763D847A7AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -609,6 +662,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E1235F2BA4EE1D005A9E13 /* Location.storyboard in Resources */,
 				7EDBEC042B590A100015AB68 /* LICENSE in Resources */,
 				829011C42B9AE89C00EA6F7B /* Product.storyboard in Resources */,
 				82A6CE332BA29B1300E08DF8 /* GoogleService-Info.plist in Resources */,
@@ -743,6 +797,40 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
+		BAFE89DEB1C97763D847A7AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp-PharmacyAdminAppUITests/Pods-PharmacyAdminApp-PharmacyAdminAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAD2E009F5AA8D942EE70E21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PharmacyAdminApp/Pods-PharmacyAdminApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FFB7B480C42DAD8B9F116EBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -774,6 +862,7 @@
 			files = (
 				829011C62B9AE8B900EA6F7B /* ProductVC.swift in Sources */,
 				7EDBEC0F2B5912870015AB68 /* SideMenuConfigurationVC.swift in Sources */,
+				82E123682BA4F1EA005A9E13 /* GoogleMapsManager.swift in Sources */,
 				7EC1B4EA2B5A3A57003958E2 /* OrderVC.swift in Sources */,
 				8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */,
 				7EC1B4F92B5A4107003958E2 /* Enum.swift in Sources */,
@@ -793,12 +882,15 @@
 				82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */,
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
 				826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */,
+				82E1235C2BA4ED4F005A9E13 /* StoreRegisterVM.swift in Sources */,
+				82E1236A2BA4F1ED005A9E13 /* RecentLocation.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				82A6CE372BA29DA700E08DF8 /* LoginVC.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
 				82062F252B722A9B00600E34 /* HomeVC.swift in Sources */,
 				829011CC2B9AF82800EA6F7B /* ProductCategoryCVCell.swift in Sources */,
 				82DB75C72B9EB0DC00002567 /* OrderDetailsVM.swift in Sources */,
+				82E123642BA4F16D005A9E13 /* GeocodeHelper.swift in Sources */,
 				82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
@@ -816,14 +908,18 @@
 				7EDBEC052B590A100015AB68 /* CenterContainmentSegue.swift in Sources */,
 				7EC1B4F62B5A3FFB003958E2 /* SwiftyPageControllerAnimatorDefault.swift in Sources */,
 				821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */,
+				82E1236E2BA4F25D005A9E13 /* MapUtils.swift in Sources */,
+				82E1235A2BA4ECFA005A9E13 /* StoreRegisterVC.swift in Sources */,
 				7EDBEBF02B58F8970015AB68 /* RoundedButton.swift in Sources */,
 				7EDBEC082B590A100015AB68 /* UIKitExtensions.swift in Sources */,
 				821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */,
 				7EDBEC092B590A100015AB68 /* SideMenuController+CustomTypes.swift in Sources */,
 				7EDBEC062B590A100015AB68 /* SideContainmentSegue.swift in Sources */,
+				82E1236C2BA4F1EF005A9E13 /* LocationManager.swift in Sources */,
 				7EC1B4F72B5A3FFB003958E2 /* SwiftyPageControllerAnimatorParallax.swift in Sources */,
 				829011C82B9AEA4200EA6F7B /* ProductVM.swift in Sources */,
 				7EC1B4FB2B5A47E0003958E2 /* OngoingOrderTVCell.swift in Sources */,
+				82E123622BA4EEC7005A9E13 /* SetLocationOnMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1105,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = JJ477WM6T9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PharmacyAdminApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1040,6 +1137,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JJ477WM6T9;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PharmacyAdminApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

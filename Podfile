@@ -11,6 +11,9 @@ pod 'FirebaseStorage'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'
 pod 'FirebaseCore'
+pod 'GoogleMaps', '4.2.0'
+pod 'GooglePlaces', '4.2.0'
+pod 'AlamofireImage'
 
     # Pods for PharmacyAdminApp
 
