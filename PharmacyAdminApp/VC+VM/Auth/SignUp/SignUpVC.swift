@@ -22,6 +22,15 @@ class SignUpVC: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func navigateOnSuccessfullSignUp() {
         let vc = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "StoreRegisterVC")
         navigationController?.pushViewController(vc, animated: true)
@@ -43,5 +52,10 @@ class SignUpVC: UIViewController {
 
     @IBAction func signUpAction(_ sender: Any) {
         userSignUpAction()
+    }
+        
+    @IBAction func loginAction(_ sender: Any) {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "AuthNC")
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

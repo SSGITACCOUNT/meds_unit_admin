@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        GoogleMapsManager.shared.configure()
         FirebaseApp.configure()
-        AppDelegate.standard.window?.rootViewController = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "LaunchScreenVC")
+        AppDelegate.standard.window?.rootViewController = ApplicationServiceProvider.shared.viewController(in: .Auth, identifier: "SignUpVC")
         return true
     }
 }

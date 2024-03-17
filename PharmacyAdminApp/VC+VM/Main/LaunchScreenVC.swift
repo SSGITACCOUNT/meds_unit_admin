@@ -34,7 +34,7 @@ class LaunchScreenVC: UIViewController {
         }
     }
     
-    private func handleAuthenticatedUser(user:User){
+    private func handleAuthenticatedUser(user:User) {
         Constants.shared.currentLoggedInFirebaseAuthUser = user
         FirestoreUserManager.shared.getUserDetailsStoredOnFirestoreDb(firebaseUser:user) { status, message, data in
             if (status){
@@ -54,6 +54,7 @@ class LaunchScreenVC: UIViewController {
     }
     
     private func handleNavigationAccordingToUserRole(firestoreUser:FirestoreUser){
+        checkStoreAvailabilityAndNavigate(firestoreUser: firestoreUser)
     }
     
     private func checkStoreAvailabilityAndNavigate(firestoreUser:FirestoreUser){

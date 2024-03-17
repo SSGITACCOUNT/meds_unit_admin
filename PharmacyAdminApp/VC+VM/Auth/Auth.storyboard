@@ -420,6 +420,9 @@
                                                                                         <state key="normal" title="Login">
                                                                                             <color key="titleColor" name="sub_color"/>
                                                                                         </state>
+                                                                                        <connections>
+                                                                                            <action selector="loginAction:" destination="vVS-0d-iLp" eventType="touchUpInside" id="iq5-ux-oaO"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
@@ -479,6 +482,7 @@
                             <constraint firstItem="wqC-Sj-FQf" firstAttribute="trailing" secondItem="NL5-Kv-11F" secondAttribute="trailing" id="xv4-Hw-KS2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0fH-JT-qRS"/>
                     <connections>
                         <outlet property="confirmPassword" destination="DRc-kI-ErX" id="scT-xB-JEW"/>
                         <outlet property="emailTxt" destination="iCW-lT-Zu3" id="Hxz-pG-egb"/>
@@ -489,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rPI-im-5JW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2791.6030534351144" y="-30.281690140845072"/>
+            <point key="canvasLocation" x="3718.320610687023" y="-30.281690140845072"/>
         </scene>
         <!--Store RegisterVC-->
         <scene sceneID="XgQ-Ui-DS7">
@@ -728,7 +732,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfA-be-iVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4515.2671755725187" y="-30.281690140845072"/>
+            <point key="canvasLocation" x="5441.9847328244268" y="-30.281690140845072"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TDA-Xh-rR1">
@@ -809,7 +813,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ce8-Yg-1MU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3588.5496183206105" y="-30.281690140845072"/>
+            <point key="canvasLocation" x="4515.2671755725187" y="-30.281690140845072"/>
         </scene>
     </scenes>
     <designables>

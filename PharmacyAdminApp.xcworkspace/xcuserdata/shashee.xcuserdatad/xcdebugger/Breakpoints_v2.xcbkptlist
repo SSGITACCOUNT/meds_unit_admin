@@ -18,37 +18,53 @@
             endingLineNumber = "19"
             landmarkName = "manageUserDirection(isUserAuthenticated:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "651028E2-B15A-4F39-92DC-63740A577FC5 - 8c8d454decc85466"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ApplicationServiceProvider.manageUserDirection(isUserAuthenticated: Swift.Bool) -&gt; ()"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/ApplicationServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "651028E2-B15A-4F39-92DC-63740A577FC5 - 8c8d454decc85466"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ApplicationServiceProvider.manageUserDirection(isUserAuthenticated: Swift.Bool) -&gt; ()"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/ApplicationServiceProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "73">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "54EF3ABD-3942-4BBF-801F-9C2AAB127018"
+            uuid = "36DF604D-146F-4FB6-B5AE-09B2DA519DA7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVM.swift"
+            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "checkIsUserAuthenticatedFromFirebase(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EF527B06-5B4E-4B9A-A666-AB02173D414A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Main/LaunchScreenVM.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "checkIsUserAuthenticatedFromFirebase(completion:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "checkStoreAvailabilityAndNavigate(firestoreUser:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
