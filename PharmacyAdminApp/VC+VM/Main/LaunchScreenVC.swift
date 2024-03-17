@@ -23,13 +23,11 @@ class LaunchScreenVC: UIViewController {
         vm.checkIsUserAuthenticatedFromFirebase { [weak self] status, message,data in
             guard let _ = self else { return }
             if(status){
-                print("***** User Authenticated ******")
                 if let _model = data as? User {
                     self?.handleAuthenticatedUser(user: _model)
                 }
             }else{
                 self?.handleUserNavigation(isUserAuthenticated: status)
-                print("***** User Not Authenticated ******")
             }
         }
     }
@@ -79,14 +77,8 @@ class LaunchScreenVC: UIViewController {
     
     
     private func navigateToHomeVc(isAdmin:Bool){
-        if(isAdmin){
-            let vc = ApplicationServiceProvider.shared.viewController(in: .Main, identifier: "SideMenuConfigurationVC")
-            AppDelegate.standard.window?.rootViewController = vc
-            
-        }else{
-            let vc = ApplicationServiceProvider.shared.viewController(in: .Main, identifier: "MainNVC")
-            AppDelegate.standard.window?.rootViewController = vc
-        }
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Main, identifier: "MainNVC")
+        AppDelegate.standard.window?.rootViewController = vc
     }
     
     private func navigateToCreatNewStoreVc(){ // This navigation doesnt work
