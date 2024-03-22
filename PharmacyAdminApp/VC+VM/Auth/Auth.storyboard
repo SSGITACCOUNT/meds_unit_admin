@@ -28,14 +28,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMz-BA-znd">
                                         <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4e-4t-3pM">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4e-4t-3pM" customClass="TPKeyboardAvoidingScrollView">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gp-rf-4Ep">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="508"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="804"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hV4-i9-dvY">
-                                                                <rect key="frame" x="20" y="0.0" width="353" height="508"/>
+                                                                <rect key="frame" x="20" y="0.0" width="353" height="804"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-OU-nAn">
                                                                         <rect key="frame" x="0.0" y="0.0" width="353" height="200"/>
@@ -87,7 +87,7 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
                                                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                                             </textField>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,6 +121,9 @@
                                                                                         <real key="value" value="0.0"/>
                                                                                     </userDefinedRuntimeAttribute>
                                                                                 </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="loginAction:" destination="PhW-GY-Lb4" eventType="touchUpInside" id="0hk-Tk-Nz8"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -150,11 +153,28 @@
                                                                                         <state key="normal" title="Sign Up">
                                                                                             <color key="titleColor" name="sub_color"/>
                                                                                         </state>
+                                                                                        <connections>
+                                                                                            <action selector="signupAction:" destination="PhW-GY-Lb4" eventType="touchUpInside" id="zCd-cY-fWP"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                             </stackView>
                                                                         </subviews>
                                                                     </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EA0-J2-asb">
+                                                                        <rect key="frame" x="0.0" y="528" width="353" height="128"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="128" id="QR4-so-3KT"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8f7-Yx-Nwk">
+                                                                        <rect key="frame" x="0.0" y="676" width="353" height="128"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="128" id="qlW-d3-lX2"/>
+                                                                        </constraints>
+                                                                    </view>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
@@ -210,6 +230,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NfZ-06-MWQ"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="DjV-4Y-Q69" id="xh4-qX-uf2"/>
+                        <outlet property="passwordTxt" destination="nUq-mR-Iby" id="GF7-CT-DZT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgY-gb-YBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -841,7 +865,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

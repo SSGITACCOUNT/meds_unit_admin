@@ -49,6 +49,7 @@
 		820D79E92B6C07670092AE11 /* FirestoreUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */; };
 		820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EA2B6C15440092AE11 /* Extensions.swift */; };
 		820D79ED2B6C15710092AE11 /* FirestorePharmacyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */; };
+		82101FA22BAC33DE00703E08 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82101FA12BAC33DE00703E08 /* LoginVM.swift */; };
 		821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603B2B8E2FBA007488CA /* SignUpVC.swift */; };
 		821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603D2B8E3082007488CA /* SignUpVM.swift */; };
 		826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A7AC82B8FA01A00879806 /* ContactVM.swift */; };
@@ -68,6 +69,7 @@
 		829245E62B8A03C8005023B5 /* Pods_PharmacyAdminApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F38AFFED5AEA6FD7F4444D /* Pods_PharmacyAdminApp.framework */; };
 		82A6CE332BA29B1300E08DF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82A6CE322BA29B1300E08DF8 /* GoogleService-Info.plist */; };
 		82A6CE372BA29DA700E08DF8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A6CE362BA29DA700E08DF8 /* LoginVC.swift */; };
+		82D9A8E82BAD456C0016311C /* TPKeyboardAvoidingScrollView in Resources */ = {isa = PBXBuildFile; fileRef = 82D9A8E72BAD456C0016311C /* TPKeyboardAvoidingScrollView */; };
 		82DB75BA2B9B1B7500002567 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DB75B92B9B1B7500002567 /* Dashboard.storyboard */; };
 		82DB75BC2B9B1B8F00002567 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */; };
 		82DB75BE2B9B1B9800002567 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BD2B9B1B9800002567 /* DashboardVM.swift */; };
@@ -157,6 +159,7 @@
 		820D79E82B6C07670092AE11 /* FirestoreUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreUserManager.swift; sourceTree = "<group>"; };
 		820D79EA2B6C15440092AE11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		820D79EC2B6C15710092AE11 /* FirestorePharmacyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestorePharmacyStore.swift; sourceTree = "<group>"; };
+		82101FA12BAC33DE00703E08 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		821A603B2B8E2FBA007488CA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		821A603D2B8E3082007488CA /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
 		826A7AC82B8FA01A00879806 /* ContactVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVM.swift; sourceTree = "<group>"; };
@@ -175,6 +178,7 @@
 		829011CB2B9AF82700EA6F7B /* ProductCategoryCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryCVCell.swift; sourceTree = "<group>"; };
 		82A6CE322BA29B1300E08DF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		82A6CE362BA29DA700E08DF8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		82D9A8E72BAD456C0016311C /* TPKeyboardAvoidingScrollView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TPKeyboardAvoidingScrollView; sourceTree = "<group>"; };
 		82DB75B92B9B1B7500002567 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		82DB75BD2B9B1B9800002567 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
@@ -457,6 +461,7 @@
 		8287C9752B63D2B600AB054C /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				82D9A8E72BAD456C0016311C /* TPKeyboardAvoidingScrollView */,
 				82E123672BA4F1EA005A9E13 /* GoogleMapsManager.swift */,
 				82E123692BA4F1ED005A9E13 /* RecentLocation.swift */,
 				82E1236B2BA4F1EF005A9E13 /* LocationManager.swift */,
@@ -510,6 +515,7 @@
 			isa = PBXGroup;
 			children = (
 				82A6CE362BA29DA700E08DF8 /* LoginVC.swift */,
+				82101FA12BAC33DE00703E08 /* LoginVM.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -674,6 +680,7 @@
 				7EC1B4E32B593B81003958E2 /* Order.storyboard in Resources */,
 				82E22F4B2B75410A00041D97 /* ReceiverTVCell.xib in Resources */,
 				7EDBEC0D2B590A100015AB68 /* README.md in Resources */,
+				82D9A8E82BAD456C0016311C /* TPKeyboardAvoidingScrollView in Resources */,
 				7EFED9C02B57CD8800FDE1A5 /* LaunchScreen.storyboard in Resources */,
 				7EFED9BD2B57CD8800FDE1A5 /* Assets.xcassets in Resources */,
 				7EFED9BB2B57CD8600FDE1A5 /* Main.storyboard in Resources */,
@@ -882,6 +889,7 @@
 				82E22F4A2B75410A00041D97 /* ReceiverTVCell.swift in Sources */,
 				7EDBEC0A2B590A100015AB68 /* SideMenuController+SideUnder.swift in Sources */,
 				826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */,
+				82101FA22BAC33DE00703E08 /* LoginVM.swift in Sources */,
 				82E1235C2BA4ED4F005A9E13 /* StoreRegisterVM.swift in Sources */,
 				82E1236A2BA4F1ED005A9E13 /* RecentLocation.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,

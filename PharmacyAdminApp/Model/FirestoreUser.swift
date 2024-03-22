@@ -14,3 +14,4 @@ struct FirestoreUser: Codable {
     var phone: String
     var avatarUrl: String
 }
+
