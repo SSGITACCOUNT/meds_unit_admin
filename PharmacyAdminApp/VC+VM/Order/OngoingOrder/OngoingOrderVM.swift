@@ -14,7 +14,8 @@ struct Order: Codable {
     var orderId: String?
     var pharmacyId: String?
     var name: String?
-    var orderStatus: String
+    var phoneNumber: String?
+    var orderStatus: String?
     var orderDate: String?
     var user: pharmasist?
 }

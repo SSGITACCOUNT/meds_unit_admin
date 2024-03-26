@@ -16,7 +16,7 @@ enum Storyboard: String {
     case Order
     case Product
     case Dashboard
-    case Earning
+    case Contact
     case Location
 }
 

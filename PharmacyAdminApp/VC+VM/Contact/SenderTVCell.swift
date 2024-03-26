@@ -26,9 +26,19 @@ class SenderTVCell: UITableViewCell {
         senderImg.clipsToBounds = true
     }
     
-    func configCell(model: ChatModel) {
+    func configCell(model: MessageFireData) {
         messageLbl.text = model.message
-        nameLetterLbl.text = "\((model.userName?.first ?? "M").uppercased())"
-        dateLbl.text = "08 Mar 2024"
+        nameLetterLbl.text = "\((model.sender?.name?.first ?? "M").uppercased())"
+        dateLbl.text = dateFormater.string(from: FirestoreHelper.shared.utcDateFormater.date(from: model.timestamp ?? "") ?? Date())
+    }
+    
+    private var dateFormater: DateFormatter {
+        get {
+            let formatter = DateFormatter()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "MMM dd, YYYY h:mm a"
+            formatter.timeZone = TimeZone.current
+            return formatter
+        }
     }
 }

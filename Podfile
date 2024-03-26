@@ -6,7 +6,10 @@ target 'PharmacyAdminApp' do
   use_frameworks!
   
 pod 'KeychainAccess'
-pod 'FirebaseAnalytics'
+pod 'Firebase/Analytics'
+pod 'Firebase/Crashlytics'
+pod 'Firebase/Messaging'
+pod 'Firebase/Database'
 pod 'FirebaseStorage'
 pod 'FirebaseAuth'
 pod 'FirebaseFirestore'

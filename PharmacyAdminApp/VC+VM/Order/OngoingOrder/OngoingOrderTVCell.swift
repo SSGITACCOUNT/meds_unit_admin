@@ -16,6 +16,7 @@ class OngoingOrderTVCell: UITableViewCell {
     @IBOutlet weak var statusLbl: UILabel!
     
     var callback: CompletionHandlerWithData?
+    var orderModel: Order?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +26,7 @@ class OngoingOrderTVCell: UITableViewCell {
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {}
     
     func configCell(model: FirestoreOrderWithStore) {
+        self.orderModel = model.firestoreOrder
         orderNoLbl.text = model.firestoreOrder?.orderId
         customerLbl.text = model.firestoreOrder?.user?.fName
         dateLbl.text = model.firestoreOrder?.orderDate
@@ -32,6 +34,6 @@ class OngoingOrderTVCell: UITableViewCell {
     }
 
     @IBAction func chatAction(_ sender: Any) {
-        callback?(true, "", nil)
+        callback?(true, "", orderModel)
     }
 }

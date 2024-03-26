@@ -8,6 +8,8 @@
 import Foundation
 
 class ContactVM {
+    var orderModel: Order?
+    
     let chatModel: [ChatModel] = [
         ChatModel(isSender: true, userName: "Asha", message: "HI"),
         ChatModel(isSender: false, userName: "Sha", message: "HI"),
@@ -23,4 +25,25 @@ struct ChatModel {
     var isSender: Bool?
     var userName: String?
     var message: String?
+}
+
+struct MessageFireData: Codable {
+    var message: String?
+    var pharmacyId: String?
+    var sender: Sender?
+    var receiver: Receiver?
+    var status: String?
+    var timestamp: String?
+}
+
+struct Sender : Codable {
+    var imageUrl: String?
+    var name: String?
+    var phoneNumber: String?
+}
+
+struct Receiver : Codable {
+    var imageUrl: String?
+    var name: String?
+    var phoneNumber: String?
 }

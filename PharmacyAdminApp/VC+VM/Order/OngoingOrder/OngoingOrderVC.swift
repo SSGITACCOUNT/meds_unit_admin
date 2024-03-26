@@ -9,13 +9,13 @@ import UIKit
 import FirebaseFirestore
 
 class OngoingOrderVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var upCommingOrderList = [FirestoreOrderWithStore]() {
         didSet {
             DispatchQueue.main.async {
-//                self.noUpcomingOrderImg.isHidden = self.upCommingOrderList.isEmpty != true
+                //                self.noUpcomingOrderImg.isHidden = self.upCommingOrderList.isEmpty != true
                 self.tableView.reloadData()
             }
         }
@@ -49,7 +49,7 @@ class OngoingOrderVC: UIViewController {
                 for  doucment in querySnapshot?.documents ?? [] {
                     let _storeDataDictoanary = doucment.data()
                     var firestoreStore =  FirestorePharmacyStore(dictionary:  _storeDataDictoanary)
-                    group.enter()                    
+                    group.enter()
                     doucment.reference.collection("orders").addSnapshotListener { querySnapshotOrders, errInOrders in
                         for orderDocument in querySnapshotOrders?.documents ?? [] {
                             let _orderDataDictoanary = orderDocument.data()
@@ -71,6 +71,14 @@ class OngoingOrderVC: UIViewController {
             }
         }
     }
+    
+    func navigateToOrderView(model: Order) {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Contact, identifier: "ContactVC")
+        if let _vc = vc as? ContactVC {
+            _vc.vm.orderModel = model
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension OngoingOrderVC: UITableViewDelegate, UITableViewDataSource {
@@ -82,8 +90,11 @@ extension OngoingOrderVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OngoingOrderTVCell", for: indexPath)
         if let _cell = cell as? OngoingOrderTVCell {
             _cell.configCell(model: upCommingOrderList[indexPath.row])
-            _cell.callback = { status, message, data in
-                
+            _cell.callback = { [weak self] status, message, data in
+                guard let _ = self else { return }
+                if let _data = data as? Order {
+                    self?.navigateToOrderView(model: _data)
+                }
             }
         }
         return cell
