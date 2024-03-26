@@ -44,7 +44,7 @@ class SignUpVC: UIViewController {
                 Constants.shared.currentLoggedInFireStoreUser = firebaseUser
                 self?.navigateOnSuccessfullSignUp()
             } else {
-                AlertManager.shared.singleActionMessage(title: "Alert!", message: message ?? "", actionButtonTitle: "Ok", vc: self!)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: message ?? "", action: "Ok", vc: self!)
             }
         }
     }

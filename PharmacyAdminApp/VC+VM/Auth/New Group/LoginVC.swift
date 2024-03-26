@@ -31,7 +31,7 @@ class LoginVC: UIViewController {
                     if(status){
                         guard  let _user = data as? User else{
 //                            RappleActivityIndicatorView.stopAnimation()
-                            AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, actionButtonTitle: "Ok", vc: self)
+                            AlertManager.shared.singleActionMessage(title: "Alert", message: message ?? "", action: "Ok", vc: self)
                             return
                         }
                         Constants.shared.currentLoggedInFirebaseAuthUser = _user
@@ -42,17 +42,17 @@ class LoginVC: UIViewController {
                                 self.checkStoreAvailabilityAndNavigate(firestoreUser: firestoreUser)
                             }else{
 //                                RappleActivityIndicatorView.stopAnimation()
-                                AlertManager.shared.singleActionMessage(title: "Alert", message: message!, actionButtonTitle: "Ok", vc: self)
+                                AlertManager.shared.singleActionMessage(title: "Alert", message: message ?? "", action: "Ok", vc: self)
                             }
                         }
                     }else{
 //                        RappleActivityIndicatorView.stopAnimation()
-                        AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, actionButtonTitle: "Ok", vc: self)
+                        AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, action: "Ok", vc: self)
                     }
                 }
             }else{
 //                RappleActivityIndicatorView.stopAnimation()
-                AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, actionButtonTitle: "Ok", vc: self)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, action: "Ok", vc: self)
             }
         }
     }
@@ -63,7 +63,7 @@ class LoginVC: UIViewController {
         storeOfAdminUserDocumentRef.getDocument { document, error in
             if let error = error as NSError? {
                 var errorMessage = "Error getting document: \(error.localizedDescription)"
-                AlertManager.shared.singleActionMessage(title: "Alert", message: errorMessage, actionButtonTitle: "Ok", vc: self)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: errorMessage, action: "Ok", vc: self)
             }else {
                 if let _storeDataDictoanary = document?.data() {
                     var firestorePharmacyStore =  FirestorePharmacyStore(dictionary: _storeDataDictoanary)

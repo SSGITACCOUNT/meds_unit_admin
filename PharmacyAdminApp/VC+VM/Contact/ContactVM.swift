@@ -28,6 +28,7 @@ struct ChatModel {
 }
 
 struct MessageFireData: Codable {
+    var contentType: String?
     var message: String?
     var pharmacyId: String?
     var sender: Sender?

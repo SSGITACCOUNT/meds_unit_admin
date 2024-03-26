@@ -57,7 +57,7 @@ class StoreRegisterVC: UIViewController {
             if(status){
                 self.navigateToAdminHomeView()
             }else{
-                AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, actionButtonTitle: "Ok", vc: self)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: _errorMsg, action: "Ok", vc: self)
             }
         }
     }

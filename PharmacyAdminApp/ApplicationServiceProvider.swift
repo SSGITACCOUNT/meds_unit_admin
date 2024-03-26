@@ -76,4 +76,9 @@ class ApplicationServiceProvider {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
     }
+    
+    func checkAndDismissAlert() {
+        guard let presented = UIApplication.shared.delegate?.window??.rootViewController?.presentedViewController as? UIAlertController else { return }
+        presented.dismiss(animated: true, completion: nil)
+    }
 }

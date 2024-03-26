@@ -40,7 +40,7 @@ class LaunchScreenVC: UIViewController {
                 Constants.shared.currentLoggedInFireStoreUser = firestoreUser
                 self.handleNavigationAccordingToUserRole(firestoreUser: firestoreUser)
             }else{
-                AlertManager.shared.singleActionMessage(title: "Alert", message: message!, actionButtonTitle: "Ok", vc: self)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: message ?? "", action: "Ok", vc: self)
             }
         }
     }
@@ -61,7 +61,7 @@ class LaunchScreenVC: UIViewController {
         storeOfAdminUserDocumentRef.getDocument { document, error in
             if let error = error as NSError? {
                 var errorMessage = "Error getting document: \(error.localizedDescription)"
-                AlertManager.shared.singleActionMessage(title: "Alert", message: errorMessage, actionButtonTitle: "Ok", vc: self)
+                AlertManager.shared.singleActionMessage(title: "Alert", message: errorMessage, action: "Ok", vc: self)
             }else {
                 if let _storeDataDictoanary = document?.data() {
                     var firestorePharmacyStore =  FirestorePharmacyStore(dictionary: _storeDataDictoanary)

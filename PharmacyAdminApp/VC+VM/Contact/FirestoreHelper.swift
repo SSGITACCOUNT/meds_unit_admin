@@ -32,12 +32,13 @@ class FirestoreHelper {
         UserDefaults.standard.removeObject(forKey: "ORDER_CHAT_MESSAGE_COUNT_\(orderNo)")
     }
     
-    func sendMessage(orderId: String, _ message: String, customerName: String, customerId: String, customerImage: String) {
+    func sendMessage(contentType: ContentType, orderId: String, _ message: String, customerName: String, customerId: String, customerImage: String) {
         
         guard orderId.isEmpty == false else { return }
         let chatPath = firestorePath.document("\(orderId)").collection("chat").document("order_chat")
         
         let newMessage: [String: Any?] = [
+            "contentType": contentType.rawValue,
             "pharmacyId": Constants.shared.currentLoggedInFireStoreUser?.id,
             "message": "\(message)",
             "sender": [
@@ -88,29 +89,6 @@ class FirestoreHelper {
                                 print(error)
                             }
                         }
-                        
-//                        self?.updateMessagesSeen(data, orderNo: orderNo)
-                                           
-                        let senderId = Constants.shared.currentLoggedInFireStoreUser?.id
-                        let reciveMessge = FirestoreHelper.shared.getRecievedMessagesCount(orderNo)
-//                        if let _lastMessage = messages.last, _lastMessage.sender?.senderId != senderId {
-//                            if reciveMessge < messages.count {
-//                                FirestoreHelper.shared.setRecievedMessagesCount(orderNo, count: messages.count)
-//                                guard let isRecieved = self?.isNewMessageRecieved, let _lastMessage = messages.last else { return }
-//                                
-//                                isRecieved(CustomerId, _lastMessage, orderNo)
-////                                HapticFeedbackManager.generate(.medium)
-//                            }
-//                        }
-                        
-                        //                        self?.updateLastMessage(orderNo: orderNo, messages.last)
-                        
-//                        let isChatClosed = (data["status"] as! String) == "close"
-//                        self!.isChatClosed?(isChatClosed)
-//                        if isChatClosed {
-//                            FirestoreHelper.shared.removeRecievedMessagesCount(orderNo)
-//                            FirestoreHelper.shared.chatListener?.remove()
-//                        }
                         complition(messages, false)
                     }
             } else {
@@ -145,4 +123,9 @@ class FirestoreHelper {
             return formatter
         }
     }
+}
+
+enum ContentType: String {
+    case message = "MESSAGE"
+    case image = "IMAGE"
 }

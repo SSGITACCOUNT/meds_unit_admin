@@ -72,6 +72,11 @@
 		82D9A8E82BAD456C0016311C /* TPKeyboardAvoidingScrollView in Resources */ = {isa = PBXBuildFile; fileRef = 82D9A8E72BAD456C0016311C /* TPKeyboardAvoidingScrollView */; };
 		82D9A8EA2BAD542C0016311C /* OngoingOrderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9A8E92BAD542C0016311C /* OngoingOrderVM.swift */; };
 		82D9A8EC2BAD921E0016311C /* FirestoreHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9A8EB2BAD921E0016311C /* FirestoreHelper.swift */; };
+		82D9A8F12BB285E00016311C /* SenderChatImageTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9A8EF2BB285E00016311C /* SenderChatImageTVCell.swift */; };
+		82D9A8F22BB285E00016311C /* SenderChatImageTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D9A8F02BB285E00016311C /* SenderChatImageTVCell.xib */; };
+		82D9A8F52BB286030016311C /* ReceiverChatImageTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9A8F32BB286030016311C /* ReceiverChatImageTVCell.swift */; };
+		82D9A8F62BB286030016311C /* ReceiverChatImageTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D9A8F42BB286030016311C /* ReceiverChatImageTVCell.xib */; };
+		82D9A8F82BB28FE30016311C /* CloudStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9A8F72BB28FE30016311C /* CloudStorageHelper.swift */; };
 		82DB75BA2B9B1B7500002567 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82DB75B92B9B1B7500002567 /* Dashboard.storyboard */; };
 		82DB75BC2B9B1B8F00002567 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */; };
 		82DB75BE2B9B1B9800002567 /* DashboardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB75BD2B9B1B9800002567 /* DashboardVM.swift */; };
@@ -183,6 +188,11 @@
 		82D9A8E72BAD456C0016311C /* TPKeyboardAvoidingScrollView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TPKeyboardAvoidingScrollView; sourceTree = "<group>"; };
 		82D9A8E92BAD542C0016311C /* OngoingOrderVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OngoingOrderVM.swift; sourceTree = "<group>"; };
 		82D9A8EB2BAD921E0016311C /* FirestoreHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreHelper.swift; sourceTree = "<group>"; };
+		82D9A8EF2BB285E00016311C /* SenderChatImageTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderChatImageTVCell.swift; sourceTree = "<group>"; };
+		82D9A8F02BB285E00016311C /* SenderChatImageTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SenderChatImageTVCell.xib; sourceTree = "<group>"; };
+		82D9A8F32BB286030016311C /* ReceiverChatImageTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverChatImageTVCell.swift; sourceTree = "<group>"; };
+		82D9A8F42BB286030016311C /* ReceiverChatImageTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiverChatImageTVCell.xib; sourceTree = "<group>"; };
+		82D9A8F72BB28FE30016311C /* CloudStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudStorageHelper.swift; sourceTree = "<group>"; };
 		82DB75B92B9B1B7500002567 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		82DB75BB2B9B1B8F00002567 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		82DB75BD2B9B1B9800002567 /* DashboardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVM.swift; sourceTree = "<group>"; };
@@ -276,12 +286,10 @@
 		7EC1B4E42B5A3728003958E2 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				82D9A8EE2BB285880016311C /* ChatImageMesssage */,
+				82D9A8ED2BB2856C0016311C /* ChatTextMesssage */,
 				7EC1B4E72B5A3783003958E2 /* Contact.storyboard */,
 				7EC1B4E52B5A3744003958E2 /* ContactVC.swift */,
-				82E22F422B7540A300041D97 /* SenderTVCell.swift */,
-				82E22F432B7540A300041D97 /* SenderTVCell.xib */,
-				82E22F482B75410A00041D97 /* ReceiverTVCell.swift */,
-				82E22F492B75410A00041D97 /* ReceiverTVCell.xib */,
 				826A7AC82B8FA01A00879806 /* ContactVM.swift */,
 				82D9A8EB2BAD921E0016311C /* FirestoreHelper.swift */,
 			);
@@ -477,6 +485,7 @@
 				820D79EA2B6C15440092AE11 /* Extensions.swift */,
 				82E123632BA4F16D005A9E13 /* GeocodeHelper.swift */,
 				82E1236D2BA4F25D005A9E13 /* MapUtils.swift */,
+				82D9A8F72BB28FE30016311C /* CloudStorageHelper.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -524,6 +533,28 @@
 				82101FA12BAC33DE00703E08 /* LoginVM.swift */,
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		82D9A8ED2BB2856C0016311C /* ChatTextMesssage */ = {
+			isa = PBXGroup;
+			children = (
+				82E22F432B7540A300041D97 /* SenderTVCell.xib */,
+				82E22F422B7540A300041D97 /* SenderTVCell.swift */,
+				82E22F492B75410A00041D97 /* ReceiverTVCell.xib */,
+				82E22F482B75410A00041D97 /* ReceiverTVCell.swift */,
+			);
+			path = ChatTextMesssage;
+			sourceTree = "<group>";
+		};
+		82D9A8EE2BB285880016311C /* ChatImageMesssage */ = {
+			isa = PBXGroup;
+			children = (
+				82D9A8EF2BB285E00016311C /* SenderChatImageTVCell.swift */,
+				82D9A8F02BB285E00016311C /* SenderChatImageTVCell.xib */,
+				82D9A8F32BB286030016311C /* ReceiverChatImageTVCell.swift */,
+				82D9A8F42BB286030016311C /* ReceiverChatImageTVCell.xib */,
+			);
+			path = ChatImageMesssage;
 			sourceTree = "<group>";
 		};
 		82DB75B82B9B1B4800002567 /* DashBoard */ = {
@@ -680,6 +711,7 @@
 				82A6CE332BA29B1300E08DF8 /* GoogleService-Info.plist in Resources */,
 				82E22F452B7540A300041D97 /* SenderTVCell.xib in Resources */,
 				7EC1B4E82B5A3783003958E2 /* Contact.storyboard in Resources */,
+				82D9A8F22BB285E00016311C /* SenderChatImageTVCell.xib in Resources */,
 				7EDBEBF42B58FEBE0015AB68 /* Auth.storyboard in Resources */,
 				82DB75BA2B9B1B7500002567 /* Dashboard.storyboard in Resources */,
 				7EDBEBF72B58FEFF0015AB68 /* Home.storyboard in Resources */,
@@ -687,6 +719,7 @@
 				82E22F4B2B75410A00041D97 /* ReceiverTVCell.xib in Resources */,
 				7EDBEC0D2B590A100015AB68 /* README.md in Resources */,
 				82D9A8E82BAD456C0016311C /* TPKeyboardAvoidingScrollView in Resources */,
+				82D9A8F62BB286030016311C /* ReceiverChatImageTVCell.xib in Resources */,
 				7EFED9C02B57CD8800FDE1A5 /* LaunchScreen.storyboard in Resources */,
 				7EFED9BD2B57CD8800FDE1A5 /* Assets.xcassets in Resources */,
 				7EFED9BB2B57CD8600FDE1A5 /* Main.storyboard in Resources */,
@@ -900,6 +933,7 @@
 				82D9A8EA2BAD542C0016311C /* OngoingOrderVM.swift in Sources */,
 				82E1235C2BA4ED4F005A9E13 /* StoreRegisterVM.swift in Sources */,
 				82E1236A2BA4F1ED005A9E13 /* RecentLocation.swift in Sources */,
+				82D9A8F82BB28FE30016311C /* CloudStorageHelper.swift in Sources */,
 				8287C9812B64D40400AB054C /* FirestoreUser.swift in Sources */,
 				82A6CE372BA29DA700E08DF8 /* LoginVC.swift in Sources */,
 				7EDBEC072B590A100015AB68 /* TransitionAnimator.swift in Sources */,
@@ -909,11 +943,13 @@
 				82E123642BA4F16D005A9E13 /* GeocodeHelper.swift in Sources */,
 				82E22F442B7540A300041D97 /* SenderTVCell.swift in Sources */,
 				8287C9742B63CF6C00AB054C /* KeychainManager.swift in Sources */,
+				82D9A8F12BB285E00016311C /* SenderChatImageTVCell.swift in Sources */,
 				7EC1B4EE2B5A3F86003958E2 /* OngoingOrderVC.swift in Sources */,
 				7EFED9B42B57CD8600FDE1A5 /* AppDelegate.swift in Sources */,
 				820D79EB2B6C15440092AE11 /* Extensions.swift in Sources */,
 				8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */,
 				7EDBEC162B591E1A0015AB68 /* SideMenuVM.swift in Sources */,
+				82D9A8F52BB286030016311C /* ReceiverChatImageTVCell.swift in Sources */,
 				7EC1B4F52B5A3FFB003958E2 /* SwiftyPageController.swift in Sources */,
 				7EDBEC142B591DB00015AB68 /* SideMenuTVCell.swift in Sources */,
 				7EFED9B62B57CD8600FDE1A5 /* SceneDelegate.swift in Sources */,
