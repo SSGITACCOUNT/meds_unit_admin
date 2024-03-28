@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,12 +31,23 @@
                                             <constraint firstAttribute="width" constant="150" id="jgu-fK-S76"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-J2-FO5">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="viewImgeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7ES-Dk-i8h"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="GtO-RA-z2I" firstAttribute="leading" secondItem="Vpu-x5-elR" secondAttribute="leading" id="DOb-lH-xzV"/>
+                                    <constraint firstItem="mFA-J2-FO5" firstAttribute="leading" secondItem="Vpu-x5-elR" secondAttribute="leading" id="Jv3-ft-PLR"/>
                                     <constraint firstItem="GtO-RA-z2I" firstAttribute="top" secondItem="Vpu-x5-elR" secondAttribute="top" id="PBD-4v-NWa"/>
+                                    <constraint firstItem="mFA-J2-FO5" firstAttribute="top" secondItem="Vpu-x5-elR" secondAttribute="top" id="QTE-dF-sh7"/>
                                     <constraint firstAttribute="trailing" secondItem="GtO-RA-z2I" secondAttribute="trailing" id="Sfv-Cj-GEu"/>
+                                    <constraint firstAttribute="trailing" secondItem="mFA-J2-FO5" secondAttribute="trailing" id="a92-v4-8Tw"/>
+                                    <constraint firstAttribute="bottom" secondItem="mFA-J2-FO5" secondAttribute="bottom" id="fg4-Gk-PJs"/>
                                     <constraint firstAttribute="bottom" secondItem="GtO-RA-z2I" secondAttribute="bottom" id="qZD-ik-chL"/>
                                 </constraints>
                             </view>
@@ -47,12 +59,50 @@
                             </label>
                         </subviews>
                     </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-we-htP">
+                        <rect key="frame" x="32" y="32" width="40" height="40"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5jC-SH-SaQ">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <color key="backgroundColor" name="sub_color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="d2G-fy-9wL"/>
+                                    <constraint firstAttribute="width" constant="40" id="fVF-KV-U99"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEr-gT-piL">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QEr-gT-piL" secondAttribute="bottom" id="GjR-JB-Aud"/>
+                            <constraint firstAttribute="trailing" secondItem="5jC-SH-SaQ" secondAttribute="trailing" id="O42-GP-nqQ"/>
+                            <constraint firstItem="QEr-gT-piL" firstAttribute="top" secondItem="sEf-we-htP" secondAttribute="top" id="aWb-NT-syy"/>
+                            <constraint firstItem="5jC-SH-SaQ" firstAttribute="leading" secondItem="sEf-we-htP" secondAttribute="leading" id="bgC-Mx-3EY"/>
+                            <constraint firstAttribute="trailing" secondItem="QEr-gT-piL" secondAttribute="trailing" id="hTY-J8-aOW"/>
+                            <constraint firstAttribute="bottom" secondItem="5jC-SH-SaQ" secondAttribute="bottom" id="kuN-Oq-AaY"/>
+                            <constraint firstItem="5jC-SH-SaQ" firstAttribute="top" secondItem="sEf-we-htP" secondAttribute="top" id="uLO-n1-agi"/>
+                            <constraint firstItem="QEr-gT-piL" firstAttribute="leading" secondItem="sEf-we-htP" secondAttribute="leading" id="uk4-bO-NFo"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="AXH-kg-nPg" secondAttribute="bottom" constant="16" id="S2O-M3-MKs"/>
+                    <constraint firstItem="sEf-we-htP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="Szi-iu-5Kj"/>
                     <constraint firstItem="AXH-kg-nPg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="UP6-qc-ytp"/>
                     <constraint firstItem="AXH-kg-nPg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="YbQ-mN-0WO"/>
+                    <constraint firstItem="sEf-we-htP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="eeD-hy-Nvw"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AXH-kg-nPg" secondAttribute="trailing" constant="16" id="nNa-dA-QTK"/>
                 </constraints>
             </tableViewCellContentView>
@@ -60,9 +110,15 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="dateLbl" destination="nhZ-gy-6fD" id="d5w-wL-gsx"/>
+                <outlet property="nameLetterLbl" destination="QEr-gT-piL" id="TE4-jl-dZP"/>
                 <outlet property="senderImg" destination="GtO-RA-z2I" id="O0E-bC-H7Q"/>
             </connections>
             <point key="canvasLocation" x="48.091603053435115" y="96.478873239436624"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="sub_color">
+            <color red="0.76899999380111694" green="0.45899999141693115" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -172,6 +172,77 @@
             </objects>
             <point key="canvasLocation" x="991.60305343511448" y="3.5211267605633805"/>
         </scene>
+        <!--Chat ImageVC-->
+        <scene sceneID="VA1-kt-2Vy">
+            <objects>
+                <viewController storyboardIdentifier="ChatImageVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="pVK-cx-yF0" customClass="ChatImageVC" customModule="PharmacyAdminApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MyW-17-KgI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jfp-um-4HN">
+                                <rect key="frame" x="16" y="75" width="361" height="703"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-yL-OxN">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-hA-UTy">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="bPl-am-ylC"/>
+                                                    <constraint firstAttribute="height" constant="40" id="hOq-W6-kIQ"/>
+                                                </constraints>
+                                                <color key="tintColor" name="theme_color"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="xmark" catalog="system"/>
+                                                <connections>
+                                                    <action selector="closeAction:" destination="pVK-cx-yF0" eventType="touchUpInside" id="f1O-LR-BeZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="0Mb-6n-kvR"/>
+                                            <constraint firstItem="i3Y-hA-UTy" firstAttribute="leading" secondItem="ScK-yL-OxN" secondAttribute="leading" id="YgO-6n-3hL"/>
+                                            <constraint firstItem="i3Y-hA-UTy" firstAttribute="centerY" secondItem="ScK-yL-OxN" secondAttribute="centerY" id="uhy-hs-AuF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ga-Ov-feJ">
+                                        <rect key="frame" x="0.0" y="56" width="361" height="647"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tdr-2K-FeN">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="647"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tdr-2K-FeN" secondAttribute="trailing" id="QAi-Wo-Ope"/>
+                                            <constraint firstItem="tdr-2K-FeN" firstAttribute="top" secondItem="0ga-Ov-feJ" secondAttribute="top" id="W18-Lf-hem"/>
+                                            <constraint firstAttribute="bottom" secondItem="tdr-2K-FeN" secondAttribute="bottom" id="kcu-gL-wRe"/>
+                                            <constraint firstItem="tdr-2K-FeN" firstAttribute="leading" secondItem="0ga-Ov-feJ" secondAttribute="leading" id="tQ8-LX-NB4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KEX-Fo-tmn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KEX-Fo-tmn" firstAttribute="bottom" secondItem="Jfp-um-4HN" secondAttribute="bottom" constant="40" id="0G6-IH-DRx"/>
+                            <constraint firstItem="KEX-Fo-tmn" firstAttribute="trailing" secondItem="Jfp-um-4HN" secondAttribute="trailing" constant="16" id="TaT-qD-xNq"/>
+                            <constraint firstItem="Jfp-um-4HN" firstAttribute="top" secondItem="KEX-Fo-tmn" secondAttribute="top" constant="16" id="drK-Dw-ks4"/>
+                            <constraint firstItem="Jfp-um-4HN" firstAttribute="leading" secondItem="KEX-Fo-tmn" secondAttribute="leading" constant="16" id="qaF-hP-l5A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeAction" destination="i3Y-hA-UTy" id="njK-vW-Gsq"/>
+                        <outlet property="orderImg" destination="tdr-2K-FeN" id="vZR-9l-dfY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLF-T4-NMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="4"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xn2-lr-95e">
             <objects>
@@ -197,8 +268,12 @@
         <image name="chat_theme" width="430" height="932"/>
         <image name="logo" width="365" height="383"/>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="sub_color">
             <color red="0.76899999380111694" green="0.45899999141693115" blue="0.46700000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme_color">
+            <color red="0.17599999904632568" green="0.60799998044967651" blue="0.56099998950958252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

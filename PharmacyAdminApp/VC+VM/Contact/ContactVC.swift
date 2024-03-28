@@ -74,6 +74,14 @@ class ContactVC: UIViewController {
         self.present(imagePickerController, animated: true, completion: nil)
     }
     
+    func presentPhotoView(model: MessageFireData) {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Contact, identifier: "ChatImageVC")
+        if let _vc = vc as? ChatImageVC {
+            _vc.model = model
+        }
+        self.navigationController?.present(vc, animated: true)
+    }
+    
     func didSelect(image: UIImage?) {
         guard let model = vm.orderModel else { return }
         if let data = image?.jpegData(compressionQuality: 0.4) {
@@ -135,6 +143,10 @@ extension ContactVC: UITableViewDelegate, UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SenderChatImageTVCell", for: indexPath)
                 if let _cell = cell as? SenderChatImageTVCell {
                     _cell.configCell(model: model)
+                    _cell.callback = { statu, message, data in
+                        guard let _model = data as? MessageFireData else { return }
+                        self.presentPhotoView(model: _model)
+                    }
                 }
                 return cell
             }
@@ -149,6 +161,10 @@ extension ContactVC: UITableViewDelegate, UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverChatImageTVCell", for: indexPath)
                 if let _cell = cell as? ReceiverChatImageTVCell {
                     _cell.configCell(model: model)
+                    _cell.callback = { statu, message, data in
+                        guard let _model = data as? MessageFireData else { return }
+                        self.presentPhotoView(model: _model)
+                    }
                 }
                 return cell
             }

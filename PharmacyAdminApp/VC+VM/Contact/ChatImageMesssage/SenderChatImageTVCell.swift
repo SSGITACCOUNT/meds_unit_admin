@@ -11,6 +11,10 @@ class SenderChatImageTVCell: UITableViewCell {
 
     @IBOutlet weak var senderImg: UIImageView!
     @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var nameLetterLbl: UILabel!
+    
+    var callback: CompletionHandlerWithData?
+    var model: MessageFireData?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,9 +25,12 @@ class SenderChatImageTVCell: UITableViewCell {
     
     
     func configCell(model: MessageFireData) {
+        self.model = model
+        
         if let url = URL(string: model.message ?? "") {
             senderImg.af.setImage(withURL: url, cacheKey: model.message ?? "", placeholderImage: UIImage(named: "profile_Img-1"), runImageTransitionIfCached: true, completion: nil)
         }
+        nameLetterLbl.text = "\((model.sender?.name?.first ?? "M").uppercased())"
         dateLbl.text = dateFormater.string(from: FirestoreHelper.shared.utcDateFormater.date(from: model.timestamp ?? "") ?? Date())
         
         senderImg.layer.cornerRadius = 12
@@ -38,5 +45,9 @@ class SenderChatImageTVCell: UITableViewCell {
             formatter.timeZone = TimeZone.current
             return formatter
         }
+    }
+    
+    @IBAction func viewImgeAction(_ sender: Any) {
+        self.callback?(true, "Ok", model)
     }
 }

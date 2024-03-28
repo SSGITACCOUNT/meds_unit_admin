@@ -7,33 +7,113 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "82CE8932-6054-4D80-808B-F9857DA58B12"
-            shouldBeEnabled = "Yes"
+            uuid = "240A4119-C882-4C9A-8132-9DBEE8A8FB3A"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PharmacyAdminApp/VC+VM/Contact/ContactVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "240A4119-C882-4C9A-8132-9DBEE8A8FB3A - 91ea6bfab2629265"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ContactVC.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Contact/ContactVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "140"
+                  endingLineNumber = "140"
+                  offsetFromSymbolStart = "1864">
+               </Location>
+               <Location
+                  uuid = "240A4119-C882-4C9A-8132-9DBEE8A8FB3A - 91ea6bfab2629244"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ContactVC.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Contact/ContactVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "1768">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8982D5B0-9B6A-4BE1-83AA-E5DDDFD3D01D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PharmacyAdminApp/VC+VM/Contact/ChatImageMesssage/SenderChatImageTVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "viewImgeAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A18C1C93-9397-454C-875C-C3C3CF8DDD64"
+            uuid = "BEFC1D5B-456C-40CE-A960-BFA974DF4FC0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PharmacyAdminApp/VC+VM/Contact/ContactVC.swift"
+            filePath = "PharmacyAdminApp/VC+VM/Contact/ChatImageView/ChatImageVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "didSelect(image:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "updateUI()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BEFC1D5B-456C-40CE-A960-BFA974DF4FC0 - ccc34033336525c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ChatImageVC.updateUI() -&gt; ()"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Contact/ChatImageView/ChatImageVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "BEFC1D5B-456C-40CE-A960-BFA974DF4FC0 - ccc34033336525c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PharmacyAdminApp.ChatImageVC.updateUI() -&gt; ()"
+                  moduleName = "PharmacyAdminApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shashee/Documents/PharmacyAdminApp/PharmacyAdminApp/VC+VM/Contact/ChatImageView/ChatImageVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

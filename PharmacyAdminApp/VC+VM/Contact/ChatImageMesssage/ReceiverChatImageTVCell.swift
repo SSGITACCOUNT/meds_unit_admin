@@ -11,6 +11,10 @@ class ReceiverChatImageTVCell: UITableViewCell {
     
     @IBOutlet weak var receiverImg: UIImageView!    
     @IBOutlet weak var dateLbl: UILabel!
+    @IBOutlet weak var nameLetterLbl: UILabel!
+    
+    var callback: CompletionHandlerWithData?
+    var model: MessageFireData?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +24,8 @@ class ReceiverChatImageTVCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {}
     
     func configCell(model: MessageFireData) {
+        self.model = model
+        
         if let url = URL(string: model.message ?? "") {
             receiverImg.af.setImage(withURL: url, cacheKey: model.message ?? "", placeholderImage: UIImage(named: "profile_Img-1"), runImageTransitionIfCached: true, completion: nil)
         }
@@ -27,6 +33,8 @@ class ReceiverChatImageTVCell: UITableViewCell {
         
         receiverImg.layer.cornerRadius = 12
         receiverImg.layer.masksToBounds = true
+        
+        nameLetterLbl.text = "\((model.receiver?.name?.first ?? "M").uppercased())"
     }
     
     private var dateFormater: DateFormatter {
@@ -38,4 +46,9 @@ class ReceiverChatImageTVCell: UITableViewCell {
             return formatter
         }
     }
+    
+    @IBAction func viewImageAction(_ sender: Any) {
+        self.callback?(true, "Ok", model)
+    }
+    
 }
