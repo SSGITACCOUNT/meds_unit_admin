@@ -25,6 +25,15 @@ class SideMenuConfigurationVC: SideMenuController {
         performSegue(withIdentifier: "Home.Menu", sender: nil)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let nc = segue.destination as? UINavigationController else { return }
         

@@ -52,6 +52,7 @@
 		82101FA22BAC33DE00703E08 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82101FA12BAC33DE00703E08 /* LoginVM.swift */; };
 		821A603C2B8E2FBA007488CA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603B2B8E2FBA007488CA /* SignUpVC.swift */; };
 		821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A603D2B8E3082007488CA /* SignUpVM.swift */; };
+		8260085F2BB585C900F7F0F1 /* AddProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260085E2BB585C900F7F0F1 /* AddProductVC.swift */; };
 		826A7AC92B8FA01A00879806 /* ContactVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A7AC82B8FA01A00879806 /* ContactVM.swift */; };
 		8287C9702B63CBCD00AB054C /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */; };
 		8287C9722B63CD9E00AB054C /* ApplicationServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */; };
@@ -170,6 +171,7 @@
 		82101FA12BAC33DE00703E08 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		821A603B2B8E2FBA007488CA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		821A603D2B8E3082007488CA /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		8260085E2BB585C900F7F0F1 /* AddProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductVC.swift; sourceTree = "<group>"; };
 		826A7AC82B8FA01A00879806 /* ContactVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactVM.swift; sourceTree = "<group>"; };
 		8287C96F2B63CBCD00AB054C /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
 		8287C9712B63CD9E00AB054C /* ApplicationServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceProvider.swift; sourceTree = "<group>"; };
@@ -475,6 +477,14 @@
 			path = SignUp;
 			sourceTree = "<group>";
 		};
+		8260085D2BB585AC00F7F0F1 /* AddProductView */ = {
+			isa = PBXGroup;
+			children = (
+				8260085E2BB585C900F7F0F1 /* AddProductVC.swift */,
+			);
+			path = AddProductView;
+			sourceTree = "<group>";
+		};
 		8287C9752B63D2B600AB054C /* Help */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +538,7 @@
 		829011C22B9AE88200EA6F7B /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				8260085D2BB585AC00F7F0F1 /* AddProductView */,
 				829011C32B9AE89C00EA6F7B /* Product.storyboard */,
 				829011C52B9AE8B900EA6F7B /* ProductVC.swift */,
 				829011C72B9AEA4200EA6F7B /* ProductVM.swift */,
@@ -973,6 +984,7 @@
 				7EC1B4F62B5A3FFB003958E2 /* SwiftyPageControllerAnimatorDefault.swift in Sources */,
 				821A603E2B8E3082007488CA /* SignUpVM.swift in Sources */,
 				82E1236E2BA4F25D005A9E13 /* MapUtils.swift in Sources */,
+				8260085F2BB585C900F7F0F1 /* AddProductVC.swift in Sources */,
 				82E1235A2BA4ECFA005A9E13 /* StoreRegisterVC.swift in Sources */,
 				7EDBEBF02B58F8970015AB68 /* RoundedButton.swift in Sources */,
 				7EDBEC082B590A100015AB68 /* UIKitExtensions.swift in Sources */,

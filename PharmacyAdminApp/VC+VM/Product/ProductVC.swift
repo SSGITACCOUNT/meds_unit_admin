@@ -31,6 +31,11 @@ class ProductVC: UIViewController {
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    @IBAction func addProductAction(_ sender: Any) {
+        let vc = ApplicationServiceProvider.shared.viewController(in: .Product, identifier: "AddProductVC")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension ProductVC: UITableViewDelegate, UITableViewDataSource {
