@@ -61,15 +61,14 @@ class OngoingOrderVC: UIViewController {
                                 guard let _firestorePharmacyOrder = firestorePharmacyOrder, let _firestoreStore = firestoreStore else { return }
                                 var fireStoreOrderWithPharmacy = FirestoreOrderWithStore(firestoreOrder: _firestorePharmacyOrder, firestoreStore: _firestoreStore)
                                 upCommingOrderListTemp.append(fireStoreOrderWithPharmacy)
-                                
                             }
-                            
                         }
                         group.leave()
                     }
                 }
                 group.notify(queue: .main) {
-                    self.upCommingOrderList.append(contentsOf: upCommingOrderListTemp)
+                    let arryList = upCommingOrderListTemp.filter({$0.firestoreOrder?.orderStatus != "COMPLETED" && $0.firestoreOrder?.orderStatus != "CANCELED"})
+                    self.upCommingOrderList.append(contentsOf: arryList)
                 }
             }
         }
