@@ -107,6 +107,9 @@ class ContactVC: UIViewController {
         FirestoreHelper.shared.getOrderChatData(orderNo: _orderNo, CustomerId: vm.orderModel?.customerId ?? "", customerName: vm.orderModel?.name ?? "", customerImage: "") { [weak self] messageData, isClosed in
             guard let _ = self else { return }
             self?.messages = messageData
+            if let arrayIndex = self?.messages.firstIndex(where: {$0.contentType == "defalt"}) {
+                self?.messages.remove(at: arrayIndex)
+            }
             self?.tableview.reloadData()
         }
     }

@@ -30,9 +30,12 @@ class OngoingOrderVC: UIViewController {
         fetchOngoingOrdersList()
     }
     
-    func navigateToOrderDetail() {
+    func navigateToOrderDetail(model: FirestoreOrderWithStore?) {
+        guard let _model = model else { return }
         let vc = ApplicationServiceProvider.shared.viewController(in: .Order, identifier: "OrderDetailsVC")
-        
+        if let _vc = vc as? OrderDetailsVC {
+            _vc.model = model
+        }
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -105,7 +108,8 @@ extension OngoingOrderVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigateToOrderDetail()
+        let model = upCommingOrderList[indexPath.row]
+        navigateToOrderDetail(model: model)
     }
 }
 

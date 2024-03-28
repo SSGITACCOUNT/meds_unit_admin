@@ -28,9 +28,16 @@ class OngoingOrderTVCell: UITableViewCell {
     func configCell(model: FirestoreOrderWithStore) {
         self.orderModel = model.firestoreOrder
         orderNoLbl.text = model.firestoreOrder?.orderId
-        customerLbl.text = model.firestoreOrder?.user?.fName
+        customerLbl.text = model.firestoreOrder?.name
         dateLbl.text = model.firestoreOrder?.orderDate
         statusLbl.text = model.firestoreOrder?.orderStatus
+        
+        if let url = URL(string: model.firestoreOrder?.imageUrl ?? "") {
+            logoNameImg.af.setImage(withURL: url, cacheKey: model.firestoreOrder?.imageUrl ?? "", placeholderImage: UIImage(named: "profile_Img-1"), runImageTransitionIfCached: true, completion: nil)
+        }
+        
+        logoNameImg.layer.cornerRadius = logoNameImg.frame.height / 2
+        logoNameImg.layer.masksToBounds = true
     }
 
     @IBAction func chatAction(_ sender: Any) {

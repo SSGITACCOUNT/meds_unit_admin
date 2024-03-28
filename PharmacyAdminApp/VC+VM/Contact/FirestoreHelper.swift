@@ -59,6 +59,36 @@ class FirestoreHelper {
             .updateData(["message": FieldValue.arrayUnion([newMessage])])
     }
     
+    func createNewChat(contentType: ContentType,orderId: String, customerName: String, customerId: String, customerImage: String, _ isDefault: Bool = false) {
+        guard orderId.isEmpty == false else { return }
+        let chatPath = firestorePath.document("\(orderId)").collection("chat").document("order_chat")
+        
+        let initChat: [String: Any?] = [
+            "message": [
+                [
+                    "contentType": "defalt",
+                    "message": "",
+                    "status": "Recived",
+                    "timestamp": utcDateFormater.string(from: Date()),
+                    "receiver": [
+                        "name": Constants.shared.currentLoggedInFireStoreUser?.fName,
+                        "phoneNumber": Constants.shared.currentLoggedInFireStoreUser?.phone,
+                        "imageUrl": Constants.shared.currentLoggedInFireStoreUser?.avatarUrl
+                    ],
+                    "sender": [
+                        "name": "\(customerName)",
+                        "phoneNumber": "\(customerId)",
+                        "imageUrl": "\(customerImage)"
+                    ]
+                ]
+            ],
+            "timestamp": utcDateFormater.string(from: Date())
+        ]
+        
+        chatPath
+            .setData(initChat, merge: true)
+    }
+    
     func getOrderChatData(orderNo: String, CustomerId: String, customerName: String, customerImage: String, _ complition: @escaping (_ messageData: [MessageFireData],_ isClosed: Bool) -> ()) {
         guard orderNo.isEmpty == false else { return }
         let chatPath = firestorePath.document("\(orderNo)").collection("chat").document("order_chat")
@@ -92,7 +122,7 @@ class FirestoreHelper {
                         complition(messages, false)
                     }
             } else {
-//                self?.createNewChat(orderId: orderNo, customerName: customerName, customerId: CustomerId, customerImage: customerImage)
+                self?.createNewChat(contentType: .message, orderId: orderNo, customerName: customerName, customerId: CustomerId, customerImage: customerImage)
                 self?.getOrderChatData(orderNo: orderNo, CustomerId: CustomerId, customerName: customerName, customerImage: customerImage, { messageData, isClosed in
                     complition(messageData, isClosed)
                 })

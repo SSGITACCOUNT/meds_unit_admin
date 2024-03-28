@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 struct Order: Codable {
     var customerId: String?
+    var customerAddress: String?
     var imageUrl: String?
     var orderId: String?
     var pharmacyId: String?
@@ -21,8 +22,8 @@ struct Order: Codable {
 }
 
 struct FirestoreOrderWithStore: Codable {
-    var firestoreOrder:Order?
-    var firestoreStore : FirestorePharmacyStore?
+    var firestoreOrder: Order?
+    var firestoreStore: FirestorePharmacyStore?
 }
 
 struct pharmasist: Codable {
